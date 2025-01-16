@@ -3,3 +3,5 @@
 
 velocidad=3;
 grav=0;
+
+estado="";
