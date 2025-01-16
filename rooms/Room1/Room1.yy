@@ -17,10 +17,12 @@
   "isDnd":false,
   "layers":[
     {"$GMRTileLayer":"","%Name":"Tiles_nivel2","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_nivel2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
-          -964,-2147483648,1,406,-3,38,1,579,-81,-2147483648,1,88,-3,122,1,128,-81,-2147483648,1,88,-3,122,1,128,
-          -81,-2147483648,1,88,-3,122,1,128,-81,-2147483648,1,88,-3,122,1,128,-81,-2147483648,1,88,-3,122,1,128,
-          -81,-2147483648,1,88,-3,122,1,128,-81,-2147483648,1,88,-3,122,1,128,-81,-2147483648,1,270,-3,240,1,298,
-          -2471,-2147483648,
+          -617,-2147483648,-2,0,-87,-2147483648,4,0,-2147483648,-2147483648,0,-78,-2147483648,1,0,-4,-2147483648,
+          -3,0,-82,-2147483648,1,0,-81,-2147483648,1,0,-3,-2147483648,1,406,-3,0,3,579,-2147483648,0,-78,-2147483648,
+          -6,0,-2,-2147483648,1,0,-78,-2147483648,-5,0,-80,-2147483648,-6,0,-2,-2147483648,1,0,-75,-2147483648,
+          3,0,-2147483648,-2147483648,-5,0,-2,-2147483648,1,0,-77,-2147483648,-7,0,-78,-2147483648,-7,0,-2,-2147483648,
+          -2,0,-73,-2147483648,-2,0,-2,-2147483648,-6,0,-2,-2147483648,1,0,-77,-2147483648,-4,0,2,298,0,-701,-2147483648,
+          1,0,-1768,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_plataforma2","path":"tilesets/ts_plataforma2/ts_plataforma2.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_nivel1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_nivel1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
           -92,-2147483648,-2,0,-82,-2147483648,-4,0,-71,-2147483648,-5,0,-6,-2147483648,-4,0,-71,-2147483648,-5,
