@@ -70,9 +70,9 @@ if(_attack){
 	}
 }
 
-//if(place_meeting(x,y,obj_plantAlive)){
-//	estado="Daño";
-//}
+if(place_meeting(x,y,obj_plantaAgresiva)){
+	estado="Daño";
+}
 
 switch(estado){
 	case "walk": 
