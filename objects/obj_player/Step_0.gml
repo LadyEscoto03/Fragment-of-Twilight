@@ -5,9 +5,26 @@ var _derecha=keyboard_check(vk_right);
 var _izquierda=keyboard_check(vk_left);
 var _jum=keyboard_check(vk_space);
 var _attack=keyboard_check(vk_enter);
+var _attack2=keyboard_check_pressed(vk_alt);
+
+
+
+
+if(_attack2){
+	estado="ataque2";
+	var disparoRayo =instance_create_layer(x,y,"Instances",obj_disparoRayo);
+	disparoRayo.speed=1;
+	disparoRayo.direction=180*face;
+}
+
+
+
+
+
 
 
 if(_derecha){
+	face=0;
 image_xscale=1;
 	repeat(velocidad){
 		if(place_free(x+1,y)){
@@ -16,6 +33,7 @@ image_xscale=1;
 	}
 }
 if(_izquierda){
+	face=1;
 image_xscale=-1;
 	repeat(velocidad){
 		if(place_free(x-1,y)){
@@ -99,6 +117,12 @@ switch(estado){
 		break;
 		case "Daño":
 		sprite_index=spr_player_danio;
+		if(image_index>=image_number-1){
+			estado="";
+		}
+		case "ataque2":
+		
+		sprite_index=spr_player_ataque2;
 		if(image_index>=image_number-1){
 			estado="";
 		}
