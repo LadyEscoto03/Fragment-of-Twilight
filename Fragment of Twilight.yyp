@@ -49,6 +49,7 @@
   },
   "name":"Fragment of Twilight",
   "resources":[
+    {"id":{"name":"obj_disparoHongo","path":"objects/obj_disparoHongo/obj_disparoHongo.yy",},},
     {"id":{"name":"obj_disparoRayo","path":"objects/obj_disparoRayo/obj_disparoRayo.yy",},},
     {"id":{"name":"obj_hongo","path":"objects/obj_hongo/obj_hongo.yy",},},
     {"id":{"name":"obj_paredInvisible","path":"objects/obj_paredInvisible/obj_paredInvisible.yy",},},

@@ -6,3 +6,9 @@ grv=0.3;
 
 hsp=0;
 vsp=0;
+
+disparo=false;
+
+frecuenciaDisparo=0;
+
+estado="";
