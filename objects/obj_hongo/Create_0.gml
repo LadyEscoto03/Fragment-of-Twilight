@@ -12,3 +12,4 @@ disparo=false;
 frecuenciaDisparo=0;
 
 estado="";
+estadoAtaque=0;

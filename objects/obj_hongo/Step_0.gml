@@ -2,14 +2,22 @@
 // You can write your code in this editor
 
 //movimiento del enemigo
-if(collision_circle(x,y,128,obj_player,false,false)){
+if(collision_circle(x,y,182,obj_player,false,false)){
     var anguloDireccion=point_direction(x,y,obj_player.x,obj_player.y);
     hsp=lengthdir_x(movespeed,anguloDireccion);
-	disparo=true;
+	
+	
+	if(collision_circle(x,y,32,obj_player,false,false)){
+		disparo=false;
+		estado="cualquiera";
+	}else{
+		disparo=true;
+	}
 }else{
 	disparo=false;
     hsp=dir*movespeed;
 }
+
 
  vsp+=grv;
 if(place_meeting(x+hsp,y,obj_paredInvisible)){
@@ -55,24 +63,33 @@ if(disparo==true){
 
 
 switch(estado){
-	case "Caminando":
+	case "correr":
 	sprite_index=spr_hongo_correr;
 	break;
 	case "ataque1":
-	sprite_index=spr_hongo_ataque1;
+	sprite_index=spr_hongo_ataque3; //ataque larga distancia
 	break;
-	case "ataque2":
-	sprite_index=spr_hongo_ataque2;
+	case "cualquiera":
+	if (image_index>=image_number-1){
+		var numero=irandom_range(1,2);
+		var ataqueAnimacion;
+		switch(numero){
+			case 1:
+			ataqueAnimacion=spr_hongo_ataque1;
+			break;
+			case 2:
+			ataqueAnimacion=spr_hongo_ataque2;
+			break;
+		}
+		sprite_index=ataqueAnimacion;
+		image_index = 0;
+	}
+
 	break;
-	case "ataque3":
-	sprite_index=spr_hongo_ataque3;
+	default:
+	sprite_index=spr_hongo_correr;
 	break;
 }
-
-
-
-
-
 
 
 
