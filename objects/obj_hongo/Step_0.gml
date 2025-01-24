@@ -6,7 +6,6 @@ if(collision_circle(x,y,182,obj_player,false,false)){
     var anguloDireccion=point_direction(x,y,obj_player.x,obj_player.y);
     hsp=lengthdir_x(movespeed,anguloDireccion);
 	
-	
 	if(collision_circle(x,y,32,obj_player,false,false)){
 		disparo=false;
 		estado="cualquiera";
@@ -50,14 +49,6 @@ if(disparo==true){
 		frecuenciaDisparo = 60;
 	}
 }
-
-
-
-
-
-
-
-
 
 
 
