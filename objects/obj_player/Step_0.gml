@@ -120,6 +120,7 @@ switch(estado){
 		if(image_index>=image_number-1){
 			estado="";
 		}
+		break;
 		case "ataque2":
 		
 		sprite_index=spr_player_ataque2;

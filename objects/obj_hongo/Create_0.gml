@@ -8,8 +8,9 @@ hsp=0;
 vsp=0;
 
 disparo=false;
-
+temporizador=0;
 frecuenciaDisparo=0;
+frecuenciaAnimacion=0;
 
 estado="";
 estadoAtaque=0;
