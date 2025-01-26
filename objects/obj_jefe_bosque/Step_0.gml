@@ -1,11 +1,33 @@
 /// @description Insert description here
 // You can write your code in this editor
 
- var anguloDireccion=point_direction(x,y,obj_player.x,obj_player.y);
- 
- hsp=lengthdir_x(movespeed,anguloDireccion);
- 
- 
+var anguloDireccion=point_direction(x,y,obj_player.x,obj_player.y);
+
+
+switch(estado){
+	
+	case "ataqueCorto":
+	break;
+	
+	case "ataqueLargo":
+	break;
+	
+	case "caminar":
+	break;
+	
+	case "muerte":
+	break;
+	
+	case "aparece":
+	break;
+	
+	case "desaparece":
+	break;
+	
+}
+
+
+hsp=lengthdir_x(movespeed,anguloDireccion);
 vsp+=grv;
 
 if(place_meeting(x+hsp,y,obj_paredInvisible)){

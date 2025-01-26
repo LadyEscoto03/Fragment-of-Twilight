@@ -78,6 +78,7 @@
     {"id":{"name":"spr_jefe_desaparece","path":"sprites/spr_jefe_desaparece/spr_jefe_desaparece.yy",},},
     {"id":{"name":"spr_jefe_explosion","path":"sprites/spr_jefe_explosion/spr_jefe_explosion.yy",},},
     {"id":{"name":"spr_jefe_hechizo","path":"sprites/spr_jefe_hechizo/spr_jefe_hechizo.yy",},},
+    {"id":{"name":"spr_jefe_normal","path":"sprites/spr_jefe_normal/spr_jefe_normal.yy",},},
     {"id":{"name":"spr_paredInvisible","path":"sprites/spr_paredInvisible/spr_paredInvisible.yy",},},
     {"id":{"name":"spr_plantaAgresiva_ataque","path":"sprites/spr_plantaAgresiva_ataque/spr_plantaAgresiva_ataque.yy",},},
     {"id":{"name":"spr_plantaAgresiva_idle","path":"sprites/spr_plantaAgresiva_idle/spr_plantaAgresiva_idle.yy",},},

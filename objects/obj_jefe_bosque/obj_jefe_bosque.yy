@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_jefe_caminando",
-    "path":"sprites/spr_jefe_caminando/spr_jefe_caminando.yy",
+    "name":"spr_jefe_normal",
+    "path":"sprites/spr_jefe_normal/spr_jefe_normal.yy",
   },
   "spriteMaskId":null,
   "visible":true,
