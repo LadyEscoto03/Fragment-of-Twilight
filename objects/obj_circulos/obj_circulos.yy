@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_jefe_bosque",
+  "%Name":"obj_circulos",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_jefe_bosque",
+  "name":"obj_circulos",
   "overriddenProperties":[],
   "parent":{
-    "name":"Jefes",
-    "path":"folders/Objects/enemigos-naturales/Jefes.yy",
+    "name":"AvisosLanzamiento",
+    "path":"folders/Objects/AvisosLanzamiento.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,13 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_jefe_caminando",
-    "path":"sprites/spr_jefe_caminando/spr_jefe_caminando.yy",
-  },
-  "spriteMaskId":{
-    "name":"spr_jefe_caminando",
-    "path":"sprites/spr_jefe_caminando/spr_jefe_caminando.yy",
-  },
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }

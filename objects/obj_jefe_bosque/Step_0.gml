@@ -2,10 +2,31 @@
 // You can write your code in this editor
 
 
+if not(collision_circle(x,y,96,obj_player,false,false)){
+	
+	var numero=irandom_range(1,3);
+	
+	switch(numero){
+		case 1:
+		
+		break;
+		
+		case 2:
+		break;
+		
+		case 3:
+		break;
+	}
+	
+	
+	
+	
+}
 
 switch(estado){
 	
 	case "ataqueCorto":
+	
 	break;
 	
 	case "ataqueLargo":
