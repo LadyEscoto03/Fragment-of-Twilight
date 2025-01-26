@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var anguloDireccion=point_direction(x,y,obj_player.x,obj_player.y);
 
 
 switch(estado){
@@ -26,6 +25,7 @@ switch(estado){
 	
 }
 
+var anguloDireccion=point_direction(x,y,obj_player.x,obj_player.y);
 
 hsp=lengthdir_x(movespeed,anguloDireccion);
 vsp+=grv;
