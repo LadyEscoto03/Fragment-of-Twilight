@@ -9,6 +9,13 @@ if not(collision_circle(x,y,96,obj_player,false,false)){
 	switch(numero){
 		case 1:
 		
+		repeat(2){
+			var dir =irandom_range(0,360);
+			var XX=obj_player.x+lengthdir_x(220,dir);
+			var YY=obj_player.y+lengthdir_y(220,dir);
+			instance_create_layer(XX,YY,"Instances",obj_player);
+		}
+		
 		break;
 		
 		case 2:
