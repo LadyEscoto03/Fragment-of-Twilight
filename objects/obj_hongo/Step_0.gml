@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 var enRangoLargo=collision_circle(x,y,182,obj_player,false,false);
-var enRangoCercano=collision_circle(x,y,32,obj_player,false,false);
+var enRangoCercano=collision_circle(x,y,22,obj_player,false,false);
 
 if (enRangoCercano) {
     estado="ataqueCorto";
@@ -29,7 +29,7 @@ if (enRangoCercano) {
 		}
 		if(image_index>=image_number-1){
 			estado="correr";
-			temporizador=120;
+			temporizador=64;
 			frecuenciaDisparo=0;
 		}
 		break;
