@@ -66,6 +66,7 @@
     {"id":{"name":"obj_hongo","path":"objects/obj_hongo/obj_hongo.yy",},},
     {"id":{"name":"obj_jefe_bosque","path":"objects/obj_jefe_bosque/obj_jefe_bosque.yy",},},
     {"id":{"name":"obj_luz","path":"objects/obj_luz/obj_luz.yy",},},
+    {"id":{"name":"obj_noche","path":"objects/obj_noche/obj_noche.yy",},},
     {"id":{"name":"obj_paredInvisible","path":"objects/obj_paredInvisible/obj_paredInvisible.yy",},},
     {"id":{"name":"obj_plantaAgresiva","path":"objects/obj_plantaAgresiva/obj_plantaAgresiva.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
