@@ -12,7 +12,9 @@ estado="";
 
 ataque=false;
 
-global.hechizo_alrededor=false;
-global.hechizo_izq_der=false;
+
+temporizadorAtaqueLargo=0;
+
+
 
 

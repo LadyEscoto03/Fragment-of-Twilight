@@ -3,24 +3,16 @@
 
 
 if not(collision_circle(x,y,96,obj_player,false,false)){
+	if(temporizadorAtaqueLargo--<=0){
+		estado="ataqueLargo";
+		ataque=false;
+		temporizadorAtaqueLargo=150;
+	}
+	if(ataque==false){
+		instance_create_layer(0,0,"Instances",obj_ataqueJefeBosque);
+		ataque=true;
+	}
 
-	var numero=irandom_range(1,3);
-	
-	switch(numero){
-		case 1:
-		if(ataque==false){
-			instance_create_layer(0,0,"Instances",obj_ataqueJefeBosque);
-			ataque=true;
-			global.hechizo_alrededor=true;
-		}
-		break;
-		
-		case 2:
-		break;
-		
-		case 3:
-		break;
-	}	
 }
 
 switch(estado){
