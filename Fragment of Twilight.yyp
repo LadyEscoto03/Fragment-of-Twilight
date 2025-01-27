@@ -57,6 +57,7 @@
   },
   "name":"Fragment of Twilight",
   "resources":[
+    {"id":{"name":"obj_ataqueJefeBosque","path":"objects/obj_ataqueJefeBosque/obj_ataqueJefeBosque.yy",},},
     {"id":{"name":"obj_circulos","path":"objects/obj_circulos/obj_circulos.yy",},},
     {"id":{"name":"obj_diaYnoche","path":"objects/obj_diaYnoche/obj_diaYnoche.yy",},},
     {"id":{"name":"obj_disparoHongo","path":"objects/obj_disparoHongo/obj_disparoHongo.yy",},},

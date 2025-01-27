@@ -3,19 +3,16 @@
 
 
 if not(collision_circle(x,y,96,obj_player,false,false)){
-	
+
 	var numero=irandom_range(1,3);
 	
 	switch(numero){
 		case 1:
-		
-		repeat(2){
-			var dir =irandom_range(0,360);
-			var XX=obj_player.x+lengthdir_x(220,dir);
-			var YY=obj_player.y+lengthdir_y(220,dir);
-			instance_create_layer(XX,YY,"Instances",obj_player);
+		if(ataque==false){
+			instance_create_layer(0,0,"Instances",obj_ataqueJefeBosque);
+			ataque=true;
+			global.hechizo_alrededor=true;
 		}
-		
 		break;
 		
 		case 2:
@@ -23,11 +20,7 @@ if not(collision_circle(x,y,96,obj_player,false,false)){
 		
 		case 3:
 		break;
-	}
-	
-	
-	
-	
+	}	
 }
 
 switch(estado){
