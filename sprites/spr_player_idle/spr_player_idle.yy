@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Jugador",
-    "path":"folders/Sprites/Jugador.yy",
+    "name":"jugador-dia",
+    "path":"folders/Sprites/Jugador/jugador-dia.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
