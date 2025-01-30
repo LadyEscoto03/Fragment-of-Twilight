@@ -6,8 +6,16 @@ var _izquierda=keyboard_check(vk_left);
 var _jum=keyboard_check(vk_space);
 var _ataqueEspada1=keyboard_check(vk_down);
 var _ataqueEspada2=keyboard_check(vk_alt);
-var _ataqueCuervo1=keyboard_check(vk_enter);
+var _ataqueCuervo1=keyboard_check(vk_control);
 var _ataqueCuervo2=keyboard_check(vk_up);
+
+
+
+
+
+
+
+
 
 
 if(_derecha){
@@ -59,41 +67,45 @@ if(_jum && !place_free(x,y+1)){
 
 
 
-if(_ataqueEspada1){
-	estado="ataque_espada1";
-	
-}else if (_ataqueEspada2){
-	estado="ataque_espada2";
-	
-} else if (_ataqueCuervo1){
-	estado="ataque_cuervo1";
-	
-} else if(_ataqueCuervo2){
-	estado="ataque_cuervo2";
-	
-}else{
-	if(_jum){
-		estado="salto";
-	}else{
-		if(_derecha or _izquierda){
-			estado="caminando";
-		}
-	}
+var en_ataque=(estado=="ataque_espada1"or estado=="ataque_espada2" or estado == "ataque_cuervo1" or estado=="ataque_cuervo2");
+
+if (!en_ataque) {
+    if(_ataqueEspada1){
+        estado="ataque_espada1";
+    }else if(_ataqueEspada2){
+        estado="ataque_espada2";
+    }else if(_ataqueCuervo1){
+        estado="ataque_cuervo1";
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    }else if(_ataqueCuervo2){
+        estado="ataque_cuervo2";
+    }else if(_jum){
+        estado="salto";
+    }else if(_derecha or _izquierda){
+        estado="caminando";
+    } 
 }
+
+
 
 
 
 switch(estado){
 	case "caminando": 
 		sprite_index=spr_jugador_correr;	
-		//if(_attack){
-		//	estado="attack";
-		//}
 		if(!_izquierda or !_derecha){
 			estado="";
 		}	
-	break;
-		
+	break;	
 	case "ataque_espada1":
 	    sprite_index=spr_jugador_ataque1;
 		if(image_index>=image_number-1){
@@ -109,6 +121,21 @@ switch(estado){
 	
 	case "ataque_cuervo1":
 		sprite_index=spr_jugador_ataqueCuervo;
+		
+		var frameDisparo=2;
+		if(floor(image_index)==frameDisparo){
+			var tiro=instance_create_layer(x,y,"Disparos",obj_cuervo);
+			tiro.NumVX*=image_xscale;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		if(image_index>=image_number-1){
 			estado="";
 		}
@@ -127,19 +154,19 @@ switch(estado){
 			estado="";
 		}
 	break;
-		//case "Daño":
-		//sprite_index=spr_player_danio;
-		//if(image_index>=image_number-1){
-		//	estado="";
-		//}
-		//break;
-		//case "ataque2":
-		
-		//sprite_index=spr_player_ataque2;
-		//if(image_index>=image_number-1){
-		//	estado="";
-		//}
-		//break;
+		case "Daño":
+		sprite_index=spr_jugador_danio;
+		if(image_index>=image_number-1){
+			estado="";
+		}
+		break;
+		case "muerte":
+		sprite_index=spr_jugador_muerte;
+		if(image_index>=image_number-1){
+			instance_destroy();
+		}
+
+		break;
 	default:
 	     sprite_index=spr_jugador_idle;	
 	 break;

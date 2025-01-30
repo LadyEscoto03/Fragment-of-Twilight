@@ -72,6 +72,7 @@
   "resources":[
     {"id":{"name":"obj_ataqueJefeBosque","path":"objects/obj_ataqueJefeBosque/obj_ataqueJefeBosque.yy",},},
     {"id":{"name":"obj_circulos","path":"objects/obj_circulos/obj_circulos.yy",},},
+    {"id":{"name":"obj_cuervo","path":"objects/obj_cuervo/obj_cuervo.yy",},},
     {"id":{"name":"obj_diaYnoche","path":"objects/obj_diaYnoche/obj_diaYnoche.yy",},},
     {"id":{"name":"obj_disparoHongo","path":"objects/obj_disparoHongo/obj_disparoHongo.yy",},},
     {"id":{"name":"obj_disparoRayo","path":"objects/obj_disparoRayo/obj_disparoRayo.yy",},},
@@ -115,6 +116,7 @@
     {"id":{"name":"spr_jugador_ataque2","path":"sprites/spr_jugador_ataque2/spr_jugador_ataque2.yy",},},
     {"id":{"name":"spr_jugador_ataqueCuervo","path":"sprites/spr_jugador_ataqueCuervo/spr_jugador_ataqueCuervo.yy",},},
     {"id":{"name":"spr_jugador_correr","path":"sprites/spr_jugador_correr/spr_jugador_correr.yy",},},
+    {"id":{"name":"spr_jugador_danio","path":"sprites/spr_jugador_danio/spr_jugador_danio.yy",},},
     {"id":{"name":"spr_jugador_idle","path":"sprites/spr_jugador_idle/spr_jugador_idle.yy",},},
     {"id":{"name":"spr_jugador_muerte","path":"sprites/spr_jugador_muerte/spr_jugador_muerte.yy",},},
     {"id":{"name":"spr_jugador_salto","path":"sprites/spr_jugador_salto/spr_jugador_salto.yy",},},
