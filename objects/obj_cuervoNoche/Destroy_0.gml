@@ -1,4 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-NumVX=3;
-estado="";
+instance_create_layer(x,y,"Disparos",obj_cuervoDestrucion)

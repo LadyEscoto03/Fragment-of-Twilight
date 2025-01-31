@@ -39,22 +39,43 @@ switch (estado) {
         break;
     
     case "ataque_cuervo1":
+	
         sprite_index = spr_jugador_ataqueCuervo;
 
-		var frameDisparo=2;
-		if(floor(image_index)==frameDisparo and tem<=0){
-			var cuervo=instance_create_layer(x+16,y,"Disparos",obj_cuervoNoche);
-			cuervo.NumVX*=image_xscale;
-			tem=5;
+		if(floor(image_index)==2 and temAtaque1<=0){
+			 var cuervo=instance_create_layer(x+(16*image_xscale),y,"Disparos",obj_cuervoNoche);
+			 cuervo.image_xscale=image_xscale;
+			 cuervo.NumVX*=image_xscale; 
+			temAtaque1=5;
 		}
 		if(image_index>=image_number-1){
-			tem-=1;
+			temAtaque1-=1;
 		}
 		
         break;
     
     case "ataque_cuervo2":
-        sprite_index = spr_jugador_tripeAtaque;
+        sprite_index=spr_jugador_tripeAtaque;
+		
+		if (floor(image_index)==3 and temAtaque2<=0) {
+			var cuervo_centro=instance_create_layer(x+(18*image_xscale),y,"Disparos",obj_cuervoNoche);
+			cuervo_centro.image_xscale=image_xscale;
+			cuervo_centro.NumVX*=image_xscale;
+			alarm[0]=5;
+			alarm[1]=10;
+			temAtaque2=5;
+		}
+		if(image_index>=image_number-1){
+			temAtaque2-=1;
+		}
+
+		
+		
+		
+		
+		
+		
+		
         break;
 
     case "salto":

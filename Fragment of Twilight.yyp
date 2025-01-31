@@ -72,6 +72,7 @@
   "resources":[
     {"id":{"name":"obj_ataqueJefeBosque","path":"objects/obj_ataqueJefeBosque/obj_ataqueJefeBosque.yy",},},
     {"id":{"name":"obj_circulos","path":"objects/obj_circulos/obj_circulos.yy",},},
+    {"id":{"name":"obj_cuervoDestrucion","path":"objects/obj_cuervoDestrucion/obj_cuervoDestrucion.yy",},},
     {"id":{"name":"obj_cuervoDia","path":"objects/obj_cuervoDia/obj_cuervoDia.yy",},},
     {"id":{"name":"obj_cuervoNoche","path":"objects/obj_cuervoNoche/obj_cuervoNoche.yy",},},
     {"id":{"name":"obj_diaYnoche","path":"objects/obj_diaYnoche/obj_diaYnoche.yy",},},
