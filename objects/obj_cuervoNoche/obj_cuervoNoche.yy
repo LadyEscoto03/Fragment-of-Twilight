@@ -11,8 +11,8 @@
   "name":"obj_cuervoNoche",
   "overriddenProperties":[],
   "parent":{
-    "name":"Disparo",
-    "path":"folders/Objects/Jugador/Disparo.yy",
+    "name":"cuervo",
+    "path":"folders/Objects/Jugador/cuervo.yy",
   },
   "parentObjectId":null,
   "persistent":false,

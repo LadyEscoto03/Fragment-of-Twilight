@@ -12,19 +12,19 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6366ec77-9027-42cc-a8cb-49fccc86f557","name":"6366ec77-9027-42cc-a8cb-49fccc86f557","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"c41c4562-1359-4ba2-881c-55bccd3e3d37","name":"c41c4562-1359-4ba2-881c-55bccd3e3d37","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"b8defe27-71a8-4371-93d5-b97c153c9458","name":"b8defe27-71a8-4371-93d5-b97c153c9458","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"a4e29024-1114-47cd-a00e-91bc8bd6c575","name":"a4e29024-1114-47cd-a00e-91bc8bd6c575","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"e38468f6-f398-4dc4-9f4a-c4d5343f9a36","name":"e38468f6-f398-4dc4-9f4a-c4d5343f9a36","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"b0866ddb-ffb0-4c93-8324-946b214540c5","name":"b0866ddb-ffb0-4c93-8324-946b214540c5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"879f869f-f149-4b63-9e52-cf1b6e009a23","name":"879f869f-f149-4b63-9e52-cf1b6e009a23","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"3477ce75-a69e-4523-8670-ae0360ad9430","name":"3477ce75-a69e-4523-8670-ae0360ad9430","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e6e9e937-a072-4227-a5cd-e78f07fbb48c","name":"e6e9e937-a072-4227-a5cd-e78f07fbb48c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"db6847f5-ba2d-421b-8ebf-03813a442fba","name":"db6847f5-ba2d-421b-8ebf-03813a442fba","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2c1e46ae-5bc4-4b21-b69c-7e98b5a6674f","name":"2c1e46ae-5bc4-4b21-b69c-7e98b5a6674f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e70b59df-6407-4472-b06a-6c1da2e3da72","name":"e70b59df-6407-4472-b06a-6c1da2e3da72","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":80,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"01ad68e5-77ae-46ea-a476-05ebc2b78fa2","blendMode":0,"displayName":"default","isLocked":false,"name":"01ad68e5-77ae-46ea-a476-05ebc2b78fa2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"010990aa-5784-4de6-a883-c875f567ca18","blendMode":0,"displayName":"default","isLocked":false,"name":"010990aa-5784-4de6-a883-c875f567ca18","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_demonio_caminar",
   "nineSlice":null,
@@ -74,23 +74,23 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6366ec77-9027-42cc-a8cb-49fccc86f557","path":"sprites/spr_demonio_caminar/spr_demonio_caminar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9f80a130-8abc-4795-81fa-f02f2c9aaa46","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"879f869f-f149-4b63-9e52-cf1b6e009a23","path":"sprites/spr_demonio_caminar/spr_demonio_caminar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"67ddee7e-93cd-457c-81db-76bd37430bfb","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c41c4562-1359-4ba2-881c-55bccd3e3d37","path":"sprites/spr_demonio_caminar/spr_demonio_caminar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2f8244f9-8aad-4a1e-95b6-3d0076ee2eb6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3477ce75-a69e-4523-8670-ae0360ad9430","path":"sprites/spr_demonio_caminar/spr_demonio_caminar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7e4b60bf-5d83-4776-9729-5a03b723bb01","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b8defe27-71a8-4371-93d5-b97c153c9458","path":"sprites/spr_demonio_caminar/spr_demonio_caminar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2a207d8f-2214-492e-858e-ada442f798ec","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e6e9e937-a072-4227-a5cd-e78f07fbb48c","path":"sprites/spr_demonio_caminar/spr_demonio_caminar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"92180475-1779-432a-b69c-ddf54512d1df","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a4e29024-1114-47cd-a00e-91bc8bd6c575","path":"sprites/spr_demonio_caminar/spr_demonio_caminar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1c2b30e7-b1ff-492a-b5fe-c90f08a0c946","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"db6847f5-ba2d-421b-8ebf-03813a442fba","path":"sprites/spr_demonio_caminar/spr_demonio_caminar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ebf1bbce-84d9-488e-9b03-8cbb8f8d93f6","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e38468f6-f398-4dc4-9f4a-c4d5343f9a36","path":"sprites/spr_demonio_caminar/spr_demonio_caminar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ee6bf92f-6b72-4c87-bc60-30066b4f54c1","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2c1e46ae-5bc4-4b21-b69c-7e98b5a6674f","path":"sprites/spr_demonio_caminar/spr_demonio_caminar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4fb652f1-1426-4dd4-860e-bf6aa9539875","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b0866ddb-ffb0-4c93-8324-946b214540c5","path":"sprites/spr_demonio_caminar/spr_demonio_caminar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"090865e4-bf40-448e-aa2c-fb368ca9c6ac","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e70b59df-6407-4472-b06a-6c1da2e3da72","path":"sprites/spr_demonio_caminar/spr_demonio_caminar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e00cea68-7a1d-49bd-adae-1136c3042dbe","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

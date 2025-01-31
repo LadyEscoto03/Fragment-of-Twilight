@@ -3,7 +3,7 @@
   "%Name":"spr_demonio_ataque1",
   "bboxMode":0,
   "bbox_bottom":72,
-  "bbox_left":16,
+  "bbox_left":13,
   "bbox_right":95,
   "bbox_top":21,
   "collisionKind":1,
@@ -12,18 +12,19 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d5b6c4fb-b899-4922-b72b-0f3c65c1dda1","name":"d5b6c4fb-b899-4922-b72b-0f3c65c1dda1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"3c935483-2af7-48c6-bd8b-f717bec87201","name":"3c935483-2af7-48c6-bd8b-f717bec87201","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"d9c2bdf3-73d8-40a5-a0b6-2c9f8634d757","name":"d9c2bdf3-73d8-40a5-a0b6-2c9f8634d757","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"25b2dc00-5a51-41f1-8b20-552c7c5a6e07","name":"25b2dc00-5a51-41f1-8b20-552c7c5a6e07","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"15a08d84-0bc4-4b6d-bfba-bca5a9399fcd","name":"15a08d84-0bc4-4b6d-bfba-bca5a9399fcd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"ffa16f6d-b4e7-4eda-90d9-3bb3f2575ac1","name":"ffa16f6d-b4e7-4eda-90d9-3bb3f2575ac1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"f3a6100c-adbb-43e6-91a6-9f47cd2581d8","name":"f3a6100c-adbb-43e6-91a6-9f47cd2581d8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"1fb424c3-df13-4a28-bc02-e7e46a34b2f3","name":"1fb424c3-df13-4a28-bc02-e7e46a34b2f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"4aa32b83-cced-4278-8406-bc690abc82dd","name":"4aa32b83-cced-4278-8406-bc690abc82dd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"667c6d33-cb47-4fd5-9b16-a3e0b3561b3c","name":"667c6d33-cb47-4fd5-9b16-a3e0b3561b3c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"abaec6f9-e3ef-4099-b591-227e8cba2f98","name":"abaec6f9-e3ef-4099-b591-227e8cba2f98","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":80,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"b46c8637-5524-4dcd-bd3f-24b75f6a56bd","blendMode":0,"displayName":"default","isLocked":false,"name":"b46c8637-5524-4dcd-bd3f-24b75f6a56bd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e08f8663-3854-4834-aeaa-0b434f253d48","blendMode":0,"displayName":"default","isLocked":false,"name":"e08f8663-3854-4834-aeaa-0b434f253d48","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_demonio_ataque1",
   "nineSlice":null,
@@ -53,7 +54,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":5.0,
+    "length":6.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -73,20 +74,23 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d5b6c4fb-b899-4922-b72b-0f3c65c1dda1","path":"sprites/spr_demonio_ataque1/spr_demonio_ataque1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ed54e0ba-8843-4329-a60b-ef76d1bd6be4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ffa16f6d-b4e7-4eda-90d9-3bb3f2575ac1","path":"sprites/spr_demonio_ataque1/spr_demonio_ataque1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9d437a02-1455-45da-9f91-ceec7bdcaeb1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3c935483-2af7-48c6-bd8b-f717bec87201","path":"sprites/spr_demonio_ataque1/spr_demonio_ataque1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"86e9464a-3afb-4943-aed7-7caf0e76faaf","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f3a6100c-adbb-43e6-91a6-9f47cd2581d8","path":"sprites/spr_demonio_ataque1/spr_demonio_ataque1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0de50eeb-2ec9-45fe-83ff-1a82541664a3","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d9c2bdf3-73d8-40a5-a0b6-2c9f8634d757","path":"sprites/spr_demonio_ataque1/spr_demonio_ataque1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b7a87c05-fca4-4f66-b1f1-e06662fd4803","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1fb424c3-df13-4a28-bc02-e7e46a34b2f3","path":"sprites/spr_demonio_ataque1/spr_demonio_ataque1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f3b54da9-6047-4ea5-90f4-00bf045de143","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"25b2dc00-5a51-41f1-8b20-552c7c5a6e07","path":"sprites/spr_demonio_ataque1/spr_demonio_ataque1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"dba92306-cd55-4f4c-9204-dd303265f4d9","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4aa32b83-cced-4278-8406-bc690abc82dd","path":"sprites/spr_demonio_ataque1/spr_demonio_ataque1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ad884e15-0fae-4d8d-8a47-b2785b0ed50e","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"15a08d84-0bc4-4b6d-bfba-bca5a9399fcd","path":"sprites/spr_demonio_ataque1/spr_demonio_ataque1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"10a007a3-6c41-47ef-8a4c-c7348daf8be3","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"667c6d33-cb47-4fd5-9b16-a3e0b3561b3c","path":"sprites/spr_demonio_ataque1/spr_demonio_ataque1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f4a53d31-1f70-49b5-8107-81b384831ee1","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"abaec6f9-e3ef-4099-b591-227e8cba2f98","path":"sprites/spr_demonio_ataque1/spr_demonio_ataque1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c7dd1746-c343-4863-8e72-a5c1627c9e2c","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
