@@ -12,7 +12,7 @@ var _attack2=keyboard_check_pressed(vk_alt);
 
 if(_attack2){
 	estado="ataque2";
-	var disparoRayo =instance_create_layer(x,y,"Instances",obj_disparoRayo);
+	var disparoRayo =instance_create_layer(x,y,"Instances",obj_cuervoDia);
 	disparoRayo.speed=1;
 	disparoRayo.direction=180*face;
 }

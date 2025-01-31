@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_disparoRayo",
+  "%Name":"obj_cuervoDia",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_disparoRayo",
+  "name":"obj_cuervoDia",
   "overriddenProperties":[],
   "parent":{
     "name":"Disparo",
