@@ -10,13 +10,6 @@ var _attack2=keyboard_check_pressed(vk_alt);
 
 
 
-if(_attack2){
-	estado="ataque2";
-	var cuervo =instance_create_layer(x,y,"Disparos",obj_cuervoDia);
-
-	cuervo.image_xscale=image_xscale;
-	cuervo.NumVX*=image_xscale;
-}
 
 
 
@@ -80,13 +73,23 @@ if(_jum && !place_free(x,y+1)){
 if(_attack){
 	estado="attack";
 }else{
-	if(_jum){
+	
+	if(_attack2){
+		estado="ataque2";
+	}else{
+		if(_jum){
 		estado="jump";
 	}else{
 		if(_derecha or _izquierda){
 			estado="walk";
 		}
 	}
+	}
+	
+	
+	
+	
+	
 }
 
 if(place_meeting(x,y,obj_plantaAgresiva)){
@@ -125,9 +128,24 @@ switch(estado){
 		case "ataque2":
 		
 		sprite_index=spr_player_ataque2;
+
+		
+		if(floor(image_index)==2 and cuervoTiro<=0){
+			 var cuervo=instance_create_layer(x+(16*image_xscale),y,"Disparos",obj_cuervoDia);
+			 cuervo.image_xscale=image_xscale;
+			 cuervo.NumVX*=image_xscale; 
+			 cuervoTiro=1;
+		}
 		if(image_index>=image_number-1){
+			cuervoTiro-=1;
 			estado="";
 		}
+		
+		
+		
+		
+		
+		
 		break;
 	default:
 	     sprite_index=spr_player_idle;	

@@ -5,3 +5,4 @@ velocidad=3;
 grav=0;
 face=0;
 estado="";
+cuervoTiro=0;
