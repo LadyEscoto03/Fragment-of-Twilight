@@ -116,7 +116,6 @@
     {"id":{"name":"spr_esqueleto_idle","path":"sprites/spr_esqueleto_idle/spr_esqueleto_idle.yy",},},
     {"id":{"name":"spr_esqueleto_muerte","path":"sprites/spr_esqueleto_muerte/spr_esqueleto_muerte.yy",},},
     {"id":{"name":"spr_fantasma_ataque","path":"sprites/spr_fantasma_ataque/spr_fantasma_ataque.yy",},},
-    {"id":{"name":"spr_fantasma_idle","path":"sprites/spr_fantasma_idle/spr_fantasma_idle.yy",},},
     {"id":{"name":"spr_fantasma_movimiento","path":"sprites/spr_fantasma_movimiento/spr_fantasma_movimiento.yy",},},
     {"id":{"name":"spr_fantasma_muerte","path":"sprites/spr_fantasma_muerte/spr_fantasma_muerte.yy",},},
     {"id":{"name":"spr_gusano","path":"sprites/spr_gusano/spr_gusano.yy",},},

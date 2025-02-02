@@ -1,7 +1,12 @@
 {
   "$GMObject":"",
   "%Name":"obj_fantasma",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_fantasma",
   "overriddenProperties":[],
@@ -28,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_fantasma_idle",
-    "path":"sprites/spr_fantasma_idle/spr_fantasma_idle.yy",
+    "name":"spr_fantasma_movimiento",
+    "path":"sprites/spr_fantasma_movimiento/spr_fantasma_movimiento.yy",
   },
   "spriteMaskId":null,
   "visible":true,
