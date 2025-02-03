@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Ojo",
+  "%Name":"obj_ojo_disparo",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Ojo",
+  "name":"obj_ojo_disparo",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ojo",
-    "path":"folders/Objects/enemigos-nocturnos/Ojo.yy",
+    "name":"ataque",
+    "path":"folders/Objects/enemigos-nocturnos/Ojo/ataque.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,9 +32,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ojo_movimiento",
-    "path":"sprites/spr_ojo_movimiento/spr_ojo_movimiento.yy",
+    "name":"spr_disparo_ojo",
+    "path":"sprites/spr_disparo_ojo/spr_disparo_ojo.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_disparo_ojo",
+    "path":"sprites/spr_disparo_ojo/spr_disparo_ojo.yy",
+  },
   "visible":true,
 }
