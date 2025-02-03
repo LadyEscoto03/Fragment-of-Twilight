@@ -2,17 +2,17 @@
 // You can write your code in this editor
 
 if(collision_circle(x,y,160,obj_player,false,false)){
+	if(tempAtaque--<=0){
+		estado="ataque";
+	}
 	var dist=point_distance(x,y,obj_player.x,obj_player.y);
-	seguir=false;
-	if(dist>=100){
+	if(dist>=120){
 		motion_set(point_direction(x, y, obj_player.x, obj_player.y),movespeed);
 		friction=0;
 	}else{
 		friction=0.005;
 	}
-	
-
-
+	seguir=false;
 }else{
 	seguir=true;
 }
@@ -33,23 +33,32 @@ if(place_meeting(x,y,all)){
 	pared=false;
 }
 
-
-//switch(estado){
-//	case "ataque":
-//	sprite_index=spr_fantasma_ataque;
-//	//if(image_index>=image_number-1){
-//	//	tempAtaque-=1;
-//	//}
-//	sprActual=sprite_index;
-//	break;
-//	case "muerte":
-//	sprite_index=spr_fantasma_muerte;
-//	sprActual=sprite_index;
-//	break;
-//	default: 
-//	sprite_index=spr_fantasma_movimiento;
+switch(estado){
+	case "ataque":
+	sprite_index=spr_fantasma_ataque;
 	
-//	sprActual=spr_fantasma_movimiento;
-//	break;
-
-//}
+	var frameDisparo=7;
+		if(floor(image_index)==7 and ataqueIiro<=0){
+			var tiro=instance_create_layer(x,y,"Disparos",obj_fantasma_ataque);
+			ataqueIiro=60;	
+		}
+	if(image_index>=image_number-1){
+		image_index=0;
+		estado="";
+		tempAtaque=300;
+		ataqueIiro=0;
+		
+	}
+	break;
+	case "muerte":
+	sprite_index=spr_fantasma_muerte;
+	break;
+	default: 
+	sprite_index=spr_fantasma_movimiento;
+	 if(direction>=90 and direction<=270){
+            image_xscale=-1;
+	}else{
+		image_xscale=1;
+    }
+	break;
+}
