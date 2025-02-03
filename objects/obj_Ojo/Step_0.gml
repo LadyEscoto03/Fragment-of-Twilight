@@ -7,7 +7,7 @@ if(collision_circle(x,y,132,obj_player,false,false)){
 	}
 	var dist=point_distance(x,y,obj_player.x,obj_player.y);
 	if(dist>=96){
-		motion_set(mp_potential_step(obj_player.x,obj_player.y,movespeed,true),movespeed);
+		motion_set(point_direction(x, y, obj_player.x, obj_player.y),movespeed);
 		friction=0;
 	}
 	seguir=false;
