@@ -12,7 +12,12 @@ if(surface_exists(surface_light)){
 	draw_set_color(c_white);
 	draw_set_alpha(1);
 	
-	draw_text(obj_player.x, obj_player.y, string(alpha));
+	//if(object_exists(obj_player)){
+	//	draw_text(obj_player.x, obj_player.y, string(alpha));
+	//}else if(object_exists(obj_player_noche)){
+	//	draw_text(obj_player_noche.x, obj_player_noche.y, string(alpha));
+	//}
+	
 	
 	gpu_set_blendmode(bm_subtract);
 	
@@ -25,9 +30,9 @@ if(surface_exists(surface_light)){
 		for(var i=0;i<_num;i++){
 			var _inst=instance_find(obj_luz,i);
 			draw_set_alpha(.9);
-			draw_circle(_inst.x, _inst.y, 32, false); 
+			draw_circle(_inst.x,_inst.y,24+irandom(1),false);
 			draw_set_alpha(0.5);
-			draw_circle(_inst.x, _inst.y, 64, false);
+			draw_circle(_inst.x,_inst.y,32+irandom(1),false);
 		}
 		
 		

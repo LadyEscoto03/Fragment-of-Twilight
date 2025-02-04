@@ -59,6 +59,7 @@
     {"$GMFolder":"","%Name":"Fondos","folderPath":"folders/Sprites/Fondos.yy","name":"Fondos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Ilumicacion","folderPath":"folders/Sprites/Ilumicacion.yy","name":"Ilumicacion","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Jugador","folderPath":"folders/Sprites/Jugador.yy","name":"Jugador","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Ciclos-aparecer","folderPath":"folders/Sprites/Jugador/Ciclos-aparecer.yy","name":"Ciclos-aparecer","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"jugador-dia","folderPath":"folders/Sprites/Jugador/jugador-dia.yy","name":"jugador-dia","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Disparo","folderPath":"folders/Sprites/Jugador/jugador-dia/Disparo.yy","name":"Disparo","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"jugador-noche","folderPath":"folders/Sprites/Jugador/jugador-noche.yy","name":"jugador-noche","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -82,6 +83,7 @@
   "resources":[
     {"id":{"name":"obj_ataqueJefeBosque","path":"objects/obj_ataqueJefeBosque/obj_ataqueJefeBosque.yy",},},
     {"id":{"name":"obj_circulos","path":"objects/obj_circulos/obj_circulos.yy",},},
+    {"id":{"name":"obj_control_player","path":"objects/obj_control_player/obj_control_player.yy",},},
     {"id":{"name":"obj_cuervoDestrucion","path":"objects/obj_cuervoDestrucion/obj_cuervoDestrucion.yy",},},
     {"id":{"name":"obj_cuervoDia","path":"objects/obj_cuervoDia/obj_cuervoDia.yy",},},
     {"id":{"name":"obj_cuervoEnemigo","path":"objects/obj_cuervoEnemigo/obj_cuervoEnemigo.yy",},},
@@ -106,6 +108,7 @@
     {"id":{"name":"obj_player_noche","path":"objects/obj_player_noche/obj_player_noche.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"rm_nivel1","path":"rooms/rm_nivel1/rm_nivel1.yy",},},
+    {"id":{"name":"spr_aparecer","path":"sprites/spr_aparecer/spr_aparecer.yy",},},
     {"id":{"name":"spr_cuervo_ataque","path":"sprites/spr_cuervo_ataque/spr_cuervo_ataque.yy",},},
     {"id":{"name":"spr_cuervo_caminar","path":"sprites/spr_cuervo_caminar/spr_cuervo_caminar.yy",},},
     {"id":{"name":"spr_cuervo_choque","path":"sprites/spr_cuervo_choque/spr_cuervo_choque.yy",},},

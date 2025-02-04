@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+depth=2;
 surface_light = surface_create(room_width, room_height);
 
 alpha=0;

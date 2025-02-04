@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 var _derecha=keyboard_check(vk_right);
 var _izquierda=keyboard_check(vk_left);
 var _jum=keyboard_check(vk_space);
