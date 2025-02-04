@@ -176,6 +176,7 @@
     {"id":{"name":"spr_player_salto","path":"sprites/spr_player_salto/spr_player_salto.yy",},},
     {"id":{"name":"ts_plataforma1","path":"tilesets/ts_plataforma1/ts_plataforma1.yy",},},
     {"id":{"name":"ts_plataforma2","path":"tilesets/ts_plataforma2/ts_plataforma2.yy",},},
+    {"id":{"name":"ts_plataforma3","path":"tilesets/ts_plataforma3/ts_plataforma3.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
