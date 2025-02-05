@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"jefeBosque",
-    "path":"folders/Sprites/enemigos-naturales/Jefes/jefeBosque.yy",
+    "path":"folders/Sprites/enemigos-naturales/Jefe/jefeBosque.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
