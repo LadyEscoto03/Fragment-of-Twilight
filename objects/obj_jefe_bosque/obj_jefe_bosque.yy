@@ -10,8 +10,8 @@
   "name":"obj_jefe_bosque",
   "overriddenProperties":[],
   "parent":{
-    "name":"Jefes",
-    "path":"folders/Objects/enemigos-naturales/Jefes.yy",
+    "name":"Jefe",
+    "path":"folders/Objects/enemigos-naturales/Jefe.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -8,8 +8,8 @@
   "name":"obj_ataqueJefeBosque",
   "overriddenProperties":[],
   "parent":{
-    "name":"AvisosLanzamiento",
-    "path":"folders/Objects/AvisosLanzamiento.yy",
+    "name":"jefeDia",
+    "path":"folders/Objects/AvisosLanzamiento/jefeDia.yy",
   },
   "parentObjectId":null,
   "persistent":false,

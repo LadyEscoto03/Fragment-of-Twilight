@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"lanzamientos",
-    "path":"folders/Objects/AvisosLanzamiento/lanzamientos.yy",
+    "path":"folders/Objects/AvisosLanzamiento/jefeDia/lanzamientos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
