@@ -7,12 +7,11 @@ grv=0.3;
 hsp=0;
 vsp=0;
 
-estado="";
-
-ataque=false;
-
-
-temporizadorAtaqueLargo=0;
+// Inicialización de variables
+tem = 300;
+tiempo_hechizo = 60; // Duración de la animación del hechizo
+ataque = false;
+estado = "caminar";
 
 
 

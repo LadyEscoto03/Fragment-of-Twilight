@@ -1,55 +1,61 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-estado="caminar";
-if not(collision_circle(x,y,82,obj_player,false,false)){
-	if(temporizadorAtaqueLargo--<=0){
-		estado="ataqueLargo";
-		ataque=false;
-		temporizadorAtaqueLargo=150;
-	}
 
-	if(ataque==false){
-		instance_create_layer(0,0,"Instances",obj_hechizoJefeNoche);
-		ataque=true;
-	}
+if(estado=="hechizo"){
+    tiempo_hechizo--; 
+    if(tiempo_hechizo<=0){
+        estado="caminar";
+        tiempo_hechizo=60;
+        ataque=false;
+    }
+} 
+else {
+    if (!collision_circle(x,y,82,obj_player,false,false)) {
+        if(tem>0){
+			tem--;
+		}
 
-}else {
-	
-	estado="ataqueCorto";
+        if(tem<=0){
+            estado="hechizo";
+            tem=300;
+        }else{
+			estado="caminar";
+        }
+    }else if(collision_circle(x,y,46,obj_player,false,false)) {
+        estado="espada";
+    }
 }
 
-switch(estado){
-	
-	case "ataqueCorto":
-	//sprite_index=spr_jefe_noche_ataqueEspada;
-	movespeed=0;
-	break;
-	
-	case "ataqueLargo":
-	sprite_index=spr_jefe_noche_hechizo;
-	
-	break;
-	
-	case "caminar":
-	sprite_index=spr_jefe_noche_caminar;
-	break;
-	
-	case "muerte":
-	break;
-	
-	case "aparece":
-	break;
-	
-	case "desaparece":
-	break;
-	
+switch (estado) {
+    case "hechizo":
+        sprite_index = spr_jefe_noche_hechizo;
+        if (ataque==false and(floor(image_index)==6)) { 
+            instance_create_layer(x,y,"lanzamientos",obj_hechizoJefeNoche);
+            ataque=true;
+        }
+        break;
+
+    case "caminar":
+        sprite_index = spr_jefe_noche_caminar;
+        break;
+
+    case "espada":
+        sprite_index = spr_jefe_noche_ataqueEspada;
+        break;
 }
 
 
 var anguloDireccion=point_direction(x,y,obj_player.x,obj_player.y);
 
-hsp=lengthdir_x(movespeed,anguloDireccion);
+// Si NO está en estado "hechizo", puede moverse
+if (estado != "hechizo") {
+    hsp = lengthdir_x(movespeed, anguloDireccion);
+} else {
+    hsp = 0; // Se queda quieto mientras lanza el hechizo
+}
+
+
 
 vsp+=grv;
 

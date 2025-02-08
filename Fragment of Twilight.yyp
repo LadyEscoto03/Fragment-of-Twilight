@@ -158,7 +158,6 @@
     {"id":{"name":"spr_jefe_noche_danio","path":"sprites/spr_jefe_noche_danio/spr_jefe_noche_danio.yy",},},
     {"id":{"name":"spr_jefe_noche_hechizo","path":"sprites/spr_jefe_noche_hechizo/spr_jefe_noche_hechizo.yy",},},
     {"id":{"name":"spr_jefe_noche_idle","path":"sprites/spr_jefe_noche_idle/spr_jefe_noche_idle.yy",},},
-    {"id":{"name":"spr_jefe_noche_invocacion","path":"sprites/spr_jefe_noche_invocacion/spr_jefe_noche_invocacion.yy",},},
     {"id":{"name":"spr_jefe_noche_muerte","path":"sprites/spr_jefe_noche_muerte/spr_jefe_noche_muerte.yy",},},
     {"id":{"name":"spr_jefe_normal","path":"sprites/spr_jefe_normal/spr_jefe_normal.yy",},},
     {"id":{"name":"spr_jugador_ataque1","path":"sprites/spr_jugador_ataque1/spr_jugador_ataque1.yy",},},
