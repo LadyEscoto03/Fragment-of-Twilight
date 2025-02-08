@@ -1,42 +1,36 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-
-if not(collision_circle(x,y,96,obj_player,false,false)){
-	if(temporizadorAtaqueLargo--<=0){
-		estado="ataqueLargo";
-		ataque=false;
-		temporizadorAtaqueLargo=150;
-	}
-	if(ataque==false){
-		instance_create_layer(0,0,"Instances",obj_ataqueJefeBosque);
-		ataque=true;
-	}
-
+if (!collision_circle(x, y, 96, obj_player, false, false) && temporizadorAtaqueLargo-- <= 0) {
+    estado = "ataqueLargo";
+    ataque = false;
+    temporizadorAtaqueLargo = 150; // Resetear temporizador
+} else if (estado != "ataqueLargo") {
+    estado = "caminar";
 }
 
-switch(estado){
-	
-	case "ataqueCorto":
-	
-	break;
-	
-	case "ataqueLargo":
-	break;
-	
-	case "caminar":
-	break;
-	
-	case "muerte":
-	break;
-	
-	case "aparece":
-	break;
-	
-	case "desaparece":
-	break;
-	
+switch (estado) {
+    case "ataqueLargo":
+        if (sprite_index != spr_jefe_hechizo) {
+            sprite_index = spr_jefe_hechizo;
+            image_index = 0;
+        }
+
+        if (!ataque) {
+            instance_create_layer(x, y, "Instances", obj_ataqueJefeBosque);
+            ataque = true;
+        }
+
+        if (image_index >= image_number - 1) {
+            estado = "caminar";
+            ataque = false;
+        }
+        break;
+
+    case "caminar":
+        sprite_index = spr_jefe_caminando;
+        break;
 }
+
 
 var anguloDireccion=point_direction(x,y,obj_player.x,obj_player.y);
 

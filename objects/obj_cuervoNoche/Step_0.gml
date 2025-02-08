@@ -6,3 +6,6 @@ x+=NumVX;
 if not (place_free(x,y)){
 	instance_destroy();
 }
+if(place_meeting(x,y,obj_hongo)){
+	instance_destroy();
+}

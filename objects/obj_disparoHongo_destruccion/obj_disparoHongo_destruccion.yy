@@ -1,13 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_disparoHongo",
+  "%Name":"obj_disparoHongo_destruccion",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_disparoHongo",
+  "name":"obj_disparoHongo_destruccion",
   "overriddenProperties":[],
   "parent":{
     "name":"Hongo",
@@ -32,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_hongo_tiroInicio",
-    "path":"sprites/spr_hongo_tiroInicio/spr_hongo_tiroInicio.yy",
+    "name":"spr_hongo_tiroFinal",
+    "path":"sprites/spr_hongo_tiroFinal/spr_hongo_tiroFinal.yy",
   },
   "spriteMaskId":null,
   "visible":true,
