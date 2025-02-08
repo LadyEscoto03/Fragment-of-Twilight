@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_lava",
+  "eventList":[],
   "managed":true,
-  "name":"obj_player",
+  "name":"obj_lava",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dia",
-    "path":"folders/Objects/Jugador/Dia.yy",
+    "name":"naturaleza",
+    "path":"folders/Objects/naturaleza.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_idle",
-    "path":"sprites/spr_player_idle/spr_player_idle.yy",
+    "name":"spr_lava",
+    "path":"sprites/spr_lava/spr_lava.yy",
   },
   "spriteMaskId":null,
   "visible":true,

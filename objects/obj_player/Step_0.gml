@@ -93,6 +93,12 @@ if(_attack){
 	
 }
 
+if(place_meeting(x,y,obj_agua)){
+	velocidad=1;
+}else{
+	 velocidad=3;
+}
+
 if(place_meeting(x,y,obj_plantaAgresiva)){
 	estado="Daño";
 }
