@@ -15,6 +15,8 @@ ataque=false;
 
 temporizadorAtaqueLargo=0;
 
+ataqueCorto=false;
+
 
 
 
