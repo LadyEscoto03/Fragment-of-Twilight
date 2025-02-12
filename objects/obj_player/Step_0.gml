@@ -62,7 +62,7 @@ if(grav<0){
 }
 
 if(_jum && !place_free(x,y+1)){
-	grav -=16;
+	grav -=14;
 }
 
 
