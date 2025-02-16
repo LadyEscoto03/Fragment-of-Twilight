@@ -27,7 +27,6 @@
     {"name":"inst_26E251","path":"rooms/rm_nivel1/rm_nivel1.yy",},
     {"name":"inst_5991A0D","path":"rooms/rm_nivel1/rm_nivel1.yy",},
     {"name":"inst_70849BEF","path":"rooms/rm_nivel1/rm_nivel1.yy",},
-    {"name":"inst_46D05B0","path":"rooms/rm_nivel1/rm_nivel1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -42,9 +41,7 @@
           140,177,-153,-2147483648,1,110,-3,7,2,111,176,-5,69,6,177,-2147483648,176,205,205,177,-154,-2147483648,
           1,48,-3,9,1,49,-13488,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_plataforma4","path":"tilesets/ts_plataforma4/ts_plataforma4.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRInstanceLayer":"","%Name":"lanzamientos","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_46D05B0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_46D05B0","objectId":{"name":"obj_plantaAgresiva2","path":"objects/obj_plantaAgresiva2/obj_plantaAgresiva2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":393.0,"y":124.0,},
-      ],"layers":[],"name":"lanzamientos","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"lanzamientos","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"lanzamientos","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_nivel1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_nivel1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
           -83,-2147483648,3,65,66,66,-83,-2147483648,3,65,66,66,-35,-2147483648,3,33,34,35,-45,-2147483648,3,65,
           66,66,-16,-2147483648,-8,0,-11,-2147483648,3,65,66,67,-45,-2147483648,3,65,66,66,-5,-2147483648,1,0,
