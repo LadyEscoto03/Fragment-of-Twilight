@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"CuervoEnemigo",
-    "path":"folders/Sprites/enemigos-nocturnos/CuervoEnemigo.yy",
+    "name":"CuervoEnemigoDia",
+    "path":"folders/Sprites/enemigos-naturales/CuervoEnemigoDia.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
