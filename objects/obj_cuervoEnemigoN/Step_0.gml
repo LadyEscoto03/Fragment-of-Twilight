@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
 //aplicar el movimiento seguiendo al player
 if(instance_exists(obj_player)){
 	if(moverAbajoPared==false){
@@ -11,8 +10,48 @@ if(instance_exists(obj_player)){
 			move_x=-vel;//izquierda
 		}
 	}
-   
+	
 }
+
+
+
+if(!place_free(x+1,y)){
+	move_y = -vel;
+
+} else if(!place_free(x-1,y)){
+	move_y = -vel;
+}
+
+if (!place_free(x, y - 1)){
+	moverAbajoPared=true;
+    grav = 0;
+    if (obj_player.x > x and place_free(x - 1, y)) {
+        move_x = -vel; //izquierda
+		esquina=true;
+    } else if(obj_player.x < x ){
+        move_x = vel;//derecha
+		esquina=true;
+    }
+}else{ 
+	if(esquina==true){
+		move_y = -vel;
+		esquina=false;
+	}
+	moverAbajoPared=false;
+    grav=1;
+}
+
+
+
+// Colisión vertical
+if (!place_free(x, y + move_y)) {
+    while (place_free(x, y + sign(move_y))) {
+        y += sign(move_y);
+    }
+    move_y = 0;
+}
+
+y += move_y; // Aplicar movimiento vertical
 
 // Colisión horizontal
 if (!place_free(x + move_x, y)) {
@@ -30,29 +69,6 @@ if (place_free(x, y + 1)) {
 } else {
     move_y = 0;
 }
-if(!place_free(x+1,y) or !place_free(x-1,y)){
-	move_y = -vel;
-}
-
-if (!place_free(x, y - 1)){
-	moverAbajoPared=true;
-    grav = 0;
-    if (obj_player.x > x && place_free(x - 1, y)) {
-        move_x = -vel; //izquierda
-		esquina=true;
-    } else if(obj_player.x < x ){
-        move_x = vel;//derecha
-		esquina=true;
-    }
-}else{ 
-	if(esquina==true){
-		move_y = -vel;
-		esquina=false;
-	}
-	moverAbajoPared=false;
-    grav=1;
-	
-}
 
 
 
@@ -63,15 +79,3 @@ if (!place_free(x, y - 1)){
 
 
 
-
-
-
-// Colisión vertical
-if (!place_free(x, y + move_y)) {
-    while (place_free(x, y + sign(move_y))) {
-        y += sign(move_y);
-    }
-    move_y = 0;
-}
-
-y += move_y; // Aplicar movimiento vertical

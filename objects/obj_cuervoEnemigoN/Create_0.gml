@@ -7,7 +7,6 @@
  grav=1;
  
  vel=1;
- 
- 
+
  moverAbajoPared=false;
  esquina=false;
