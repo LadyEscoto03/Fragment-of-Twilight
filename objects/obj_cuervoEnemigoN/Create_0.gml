@@ -10,5 +10,5 @@
 
  moverAbajoPared=false;
  esquina=false;
- 
+ current_side = "bottom";
 nada=false;
