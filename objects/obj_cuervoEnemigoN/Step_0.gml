@@ -98,12 +98,14 @@ var subir_y_libre=place_free(x,y-1);
 
 var abajo_y_ocupado=place_free(x,y+1);
 
+var arriba_y_ocupado=place_free(x,y-1);
 
-if(_derecha_y_libre or _izquierda_y_libre and !abajo_y_ocupado){
+if(_derecha_y_libre or _izquierda_y_libre and !abajo_y_ocupado and !arriba_y_ocupado){
 	image_angle=0;
-} else if(subir_y_libre and abajo_y_ocupado and !_derecha_y_libre and image_angle!=90){
+} else if(subir_y_libre and abajo_y_ocupado and !_derecha_y_libre){
 	image_angle=90;
 }
+
 
 
 
