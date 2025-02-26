@@ -11,3 +11,5 @@
  moverAbajoPared=false;
  esquina=false;
 
+
+
