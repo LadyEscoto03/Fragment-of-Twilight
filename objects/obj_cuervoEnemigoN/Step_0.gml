@@ -8,23 +8,32 @@ if(instance_exists(obj_player)){
 	if(moverAbajoPared==false){
 		if(obj_player.x>x){
 			move_x=vel;//derecha
+			image_xscale=1;
 		}else{
 			move_x=-vel;//izquierda
+			image_xscale=-1;
 		}
 	}
 	
 }
 
+if(place_free(x+1,y) and place_free(x-1,y)){
+	image_angle=0;
+}
+
 if(!place_free(x+1,y)){
 	move_y = -vel;
+	image_angle=90;
 	 
 } else if(!place_free(x-1,y)){
 	move_y = -vel;
+	image_angle=-90;
 }
-
 if(!place_free(x,y-1)){ 
 	moverAbajoPared=true;
+	image_angle=180;
     grav = 0;
+
     if (obj_player.x > x and place_free(x - 1, y)) {
         move_x = -vel; //izquierda
 		esquina=true;
@@ -34,12 +43,15 @@ if(!place_free(x,y-1)){
 		esquina=true;
     }
 }else{ 
+	
 	if(esquina==true){
 		move_y = -vel;
 		esquina=false;
 	}
 	moverAbajoPared=false;
     grav=1;
+
+
 }
 
 // Colisión vertical
@@ -68,69 +80,11 @@ x += move_x; // Aplicar movimiento horizontal
 
 // Gravedad
 if (place_free(x, y + 1)){
+
     move_y += grav;
 } else {
     move_y = 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//var _derecha_y_libre=place_free(x+1,y);
-
-//var _izquierda_y_libre=place_free(x-1,y);
-
-//var subir_y_libre=place_free(x,y-1);
-
-//var abajo_y_ocupado=!place_free(x,y+1);
-
-//var arriba_y_ocupado=!place_free(x,y-1);
-
-//if(_derecha_y_libre or _izquierda_y_libre and !abajo_y_ocupado and !arriba_y_ocupado){
-//	image_angle=0;
-//} else if(subir_y_libre and abajo_y_ocupado and !_derecha_y_libre){
-//	image_angle=90;
-//}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
