@@ -13,8 +13,13 @@ if(instance_exists(obj_player)){
 			move_x=-vel;//izquierda
 			image_xscale=-1;
 		}
+		
 	}
 	
+}
+
+if((place_free(x+1,y) or place_free(x-1,y)) and collision_circle(x,y,32,obj_player,false,false)){
+	sprite_index=spr_cuervoN_ataque1;
 }
 
 if(place_free(x+1,y) and place_free(x-1,y)){
@@ -80,11 +85,12 @@ x += move_x; // Aplicar movimiento horizontal
 
 // Gravedad
 if (place_free(x, y + 1)){
-
     move_y += grav;
 } else {
     move_y = 0;
 }
+
+
 
 
 
