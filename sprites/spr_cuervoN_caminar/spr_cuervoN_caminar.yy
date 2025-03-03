@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"spr_cuervoN_caminar",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":92,
   "bbox_left":39,
   "bbox_right":57,
-  "bbox_top":67,
+  "bbox_top":68,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
