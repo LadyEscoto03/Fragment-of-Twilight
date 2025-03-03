@@ -18,11 +18,11 @@ if(instance_exists(obj_player)){
 	
 }
 
-if((place_free(x+1,y) or place_free(x-1,y)) and collision_circle(x,y,32,obj_player,false,false)){
-	sprite_index=spr_cuervoN_ataque1;
-}else{
-	sprite_index=spr_cuervoN_caminar;
-}
+//if((place_free(x+1,y) or place_free(x-1,y)) and collision_circle(x,y,32,obj_player,false,false)){
+//	sprite_index=spr_cuervoN_ataque1;
+//}else{
+//	sprite_index=spr_cuervoN_caminar;
+//}
 if(place_free(x+1,y) and place_free(x-1,y)){
 	image_angle=0;
 }
