@@ -22,63 +22,56 @@ if(instance_exists(obj_player)){
 				image_xscale=-1;
 			}
 		}
-	}else{
-		cambioDirect--;
-		if(cambioDirect<=0){
-			move_x=choose(-1,1);
-			cambioDirect=900;
-		}
-		
 	}
-	
-	
-	
-	
-	
 
-	
-	
-	
-	
-
-	
-	
 }
 
-if(place_free(x+1,y) and place_free(x-1,y)){
+if(seguirPlayer==false){
+	move_x=dir*vel;
+	if(!place_free(x+move_x,y)){
+		dir*=-1;
+	}
+	if(move_x!=0){
+		image_xscale=sign(move_x);
+	}
+}else {
+	
+	if(place_free(x+1,y) and place_free(x-1,y)){
 	image_angle=0;
-}
+	}
 
-if(!place_free(x+1,y)){
+	if(!place_free(x+1,y)){
 	move_y = -vel;
 	image_angle=90;
 	 
-} else if(!place_free(x-1,y)){
+	} else if(!place_free(x-1,y)){
 	move_y = -vel;
 	image_angle=-90;
-}
-if(!place_free(x,y-1)){ 
+	}
+	if(!place_free(x,y-1)){ 
 	moverAbajoPared=true;
 	image_angle=180;
-    grav = 0;
+	grav = 0;
 
-    if (obj_player.x > x and place_free(x - 1, y)) {
-        move_x = -vel; //izquierda
+	if (obj_player.x > x and place_free(x - 1, y)) {
+	    move_x = -vel; //izquierda
 		esquina=true;
 
-    } else if(obj_player.x < x ){
-        move_x = vel;//derecha
+	} else if(obj_player.x < x ){
+	    move_x = vel;//derecha
 		esquina=true;
-    }
-}else{ 
+	}
+	}else{ 
 	
 	if(esquina==true){
 		move_y = -vel;
 		esquina=false;
 	}
 	moverAbajoPared=false;
-    grav=1;
+	grav=1;
 
+
+	}
 
 }
 

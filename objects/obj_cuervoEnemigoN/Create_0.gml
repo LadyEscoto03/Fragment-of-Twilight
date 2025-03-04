@@ -4,6 +4,8 @@
  move_x=0;
  move_y=0;
  
+ dir=1;
+ 
  grav=1;
  
  vel=1;
