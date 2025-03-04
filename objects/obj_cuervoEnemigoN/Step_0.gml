@@ -17,9 +17,11 @@ if(instance_exists(obj_player)){
 			if(obj_player.x>x){
 				move_x=vel;//derecha
 				image_xscale=1;
-			}else{
+			}else if(obj_player.x<x){
 				move_x=-vel;//izquierda
 				image_xscale=-1;
+			}else if(obj_player.x==x){
+				move_x=0;
 			}
 		}
 	}
