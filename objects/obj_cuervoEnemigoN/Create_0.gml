@@ -12,5 +12,8 @@
  esquina=false;
 
 
+estado="caminar";
 
-ataques=false;
+
+seguirPlayer=false;
+cambioDirect=0;

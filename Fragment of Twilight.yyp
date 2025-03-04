@@ -146,7 +146,6 @@
     {"id":{"name":"spr_cuervoN_ataque3","path":"sprites/spr_cuervoN_ataque3/spr_cuervoN_ataque3.yy",},},
     {"id":{"name":"spr_cuervoN_ataque4","path":"sprites/spr_cuervoN_ataque4/spr_cuervoN_ataque4.yy",},},
     {"id":{"name":"spr_cuervoN_caminar","path":"sprites/spr_cuervoN_caminar/spr_cuervoN_caminar.yy",},},
-    {"id":{"name":"spr_cuervoN_normal","path":"sprites/spr_cuervoN_normal/spr_cuervoN_normal.yy",},},
     {"id":{"name":"spr_disparo_destruccion","path":"sprites/spr_disparo_destruccion/spr_disparo_destruccion.yy",},},
     {"id":{"name":"spr_disparo_fantasma","path":"sprites/spr_disparo_fantasma/spr_disparo_fantasma.yy",},},
     {"id":{"name":"spr_disparo_ojo","path":"sprites/spr_disparo_ojo/spr_disparo_ojo.yy",},},

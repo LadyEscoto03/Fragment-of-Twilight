@@ -10,7 +10,7 @@ var x_player = x;
 var y_player = y;
 
 // Definir la longitud de las líneas
-var line_length = 50;
+var line_length = 64;
 
 // Calcular posiciones basadas en image_angle
 var x_right = x_player + lengthdir_x(line_length, image_angle);
