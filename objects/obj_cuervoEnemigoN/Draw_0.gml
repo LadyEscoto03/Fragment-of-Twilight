@@ -25,3 +25,11 @@ draw_line(x_player, y_player, x_right, y_right); // Línea derecha
 
 draw_set_color(c_blue);
 draw_line(x_player, y_player, x_left, y_left);   // Línea izquierda
+
+
+
+draw_circle(x,y,24,true);
+
+draw_circle(x,y,64,true);
+
+

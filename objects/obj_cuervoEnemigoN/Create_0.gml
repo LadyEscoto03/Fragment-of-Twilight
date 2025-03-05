@@ -19,3 +19,6 @@ estado="caminar";
 
 seguirPlayer=false;
 cambioDirect=0;
+
+
+animacion=true;

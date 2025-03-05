@@ -144,7 +144,6 @@
     {"id":{"name":"spr_cuervoN_ataque1","path":"sprites/spr_cuervoN_ataque1/spr_cuervoN_ataque1.yy",},},
     {"id":{"name":"spr_cuervoN_ataque2","path":"sprites/spr_cuervoN_ataque2/spr_cuervoN_ataque2.yy",},},
     {"id":{"name":"spr_cuervoN_ataque3","path":"sprites/spr_cuervoN_ataque3/spr_cuervoN_ataque3.yy",},},
-    {"id":{"name":"spr_cuervoN_ataque4","path":"sprites/spr_cuervoN_ataque4/spr_cuervoN_ataque4.yy",},},
     {"id":{"name":"spr_cuervoN_caminar","path":"sprites/spr_cuervoN_caminar/spr_cuervoN_caminar.yy",},},
     {"id":{"name":"spr_disparo_destruccion","path":"sprites/spr_disparo_destruccion/spr_disparo_destruccion.yy",},},
     {"id":{"name":"spr_disparo_fantasma","path":"sprites/spr_disparo_fantasma/spr_disparo_fantasma.yy",},},
@@ -231,6 +230,6 @@
   ],
   "templateType":"game",
   "TextureGroups":[
-    {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":false,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
   ],
 }

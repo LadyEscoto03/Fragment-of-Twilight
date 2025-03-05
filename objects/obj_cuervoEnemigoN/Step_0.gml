@@ -99,6 +99,7 @@ if (!place_free(x + move_x, y)) {
     move_x = 0;
 }
 
+
 x += move_x; // Aplicar movimiento horizontal
 
 // Gravedad
@@ -109,7 +110,23 @@ if (place_free(x, y + 1)){
 }
 
 
-
+if(collision_circle(x,y,24,obj_player,false,false)){
+	if(animacion==true){
+		animacion=false;
+		var num=choose(1,2);
+		switch(num){
+			case 1:
+			estado="ataque3";
+			break;
+			case 2:
+			estado="ataque1";
+			break;
+		}
+	}	
+}else{
+	estado="caminar";
+	animacion=true;
+}
 
 
 
@@ -123,16 +140,24 @@ if (place_free(x, y + 1)){
 
 switch(estado){
 	case "caminar":
+	sprite_index=spr_cuervoN_caminar;
 	break;
 	case "ataque1":
+	sprite_index=spr_cuervoN_ataque1;
+	if (image_index >= image_number - 1) {
+		animacion=true;
+	}
 	break;
 	case "ataque2":
+	
 	break;
 	case "ataque3":
+	sprite_index=spr_cuervoN_ataque3;
+	if (image_index >= image_number - 1) {
+		animacion=true;
+	}
 	break;
-	case "ataque4":
-	break;
-	
+
 	
 	
 }
