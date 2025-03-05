@@ -22,3 +22,23 @@ cambioDirect=0;
 
 
 animacion=true;
+
+
+teletrasportacion=false;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

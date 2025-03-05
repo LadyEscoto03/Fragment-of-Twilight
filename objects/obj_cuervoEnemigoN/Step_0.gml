@@ -113,13 +113,17 @@ if (place_free(x, y + 1)){
 if(collision_circle(x,y,24,obj_player,false,false)){
 	if(animacion==true){
 		animacion=false;
-		var num=choose(1,2);
+		var num=choose(1,2,3);
 		switch(num){
 			case 1:
-			estado="ataque3";
+			estado="ataque1";
 			break;
 			case 2:
-			estado="ataque1";
+			estado="ataque2";
+			break;
+			case 3:
+			estado="ataque3";
+			teletrasportacion=true;
 			break;
 		}
 	}	
@@ -128,7 +132,33 @@ if(collision_circle(x,y,24,obj_player,false,false)){
 	animacion=true;
 }
 
+if(teletrasportacion==true){
+	var player = instance_find(obj_player, 0);
 
+	if(player!=noone){
+	
+		var distancia=28;
+		var tp_x,tp_y;
+	
+	
+		if(player.image_xscale==-1){
+		
+			tp_x=player.x+distancia;
+		
+		}else if(player.image_xscale==1){
+			tp_x=player.x-distancia;
+		}
+	
+		tp_y = player.y;
+	
+		if (!place_meeting(tp_x, tp_y, obj_player)) {
+ 
+			x = tp_x;
+			y = tp_y;
+		}	
+	}
+	
+}
 
 
 
@@ -149,12 +179,16 @@ switch(estado){
 	}
 	break;
 	case "ataque2":
-	
+	sprite_index=spr_cuervoN_ataque3;
+	if (image_index >= image_number - 1) {
+		animacion=true;
+	}
 	break;
 	case "ataque3":
 	sprite_index=spr_cuervoN_ataque3;
 	if (image_index >= image_number - 1) {
 		animacion=true;
+		teletrasportacion=false;
 	}
 	break;
 
