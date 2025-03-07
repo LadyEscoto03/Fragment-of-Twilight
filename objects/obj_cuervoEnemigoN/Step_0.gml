@@ -14,13 +14,14 @@ if(instance_exists(obj_player)){
 	}
 	if(seguirPlayer==true){
 		if(moverAbajoPared==false){
+			
 			if(obj_player.x>x){
 				move_x=vel;//derecha
 				image_xscale=1;
 			}else if(obj_player.x<x){
 				move_x=-vel;//izquierda
 				image_xscale=-1;
-			}else if(obj_player.x==x){
+			} else if(obj_player.x==x){
 				move_x=0;
 			}
 		}
@@ -99,8 +100,14 @@ if (!place_free(x + move_x, y)) {
     move_x = 0;
 }
 
+if(estado=="ataque1" or estado=="ataque2" or estado=="teletransportacion"){
+	move_x=0;
+}else{
+	x += move_x; // Aplicar movimiento horizontal
+}
 
-x += move_x; // Aplicar movimiento horizontal
+
+
 
 // Gravedad
 if (place_free(x, y + 1)){
@@ -110,9 +117,10 @@ if (place_free(x, y + 1)){
 }
 
 
-if(collision_circle(x,y,24,obj_player,false,false)){
+if(collision_circle(x,y,16,obj_player,false,false)){
 	
 	if(animacion==true){
+		
 		animacion=false;
 		var num=choose(1,2);
 		switch(num){
@@ -129,15 +137,17 @@ if(collision_circle(x,y,24,obj_player,false,false)){
 	animacion=true;
 }
 
-
 //área para teletransportar
-if (!collision_circle(x, y, 96, obj_player, false, false)) {
+if (!collision_circle(x, y, 96, obj_player, false, false) and seguirPlayer==true) {
     if (timerTs-- <= 0) {
+		move_x=0;
 		estado="teletransportacion";   
 		
     }
 	
 }
+
+
 
 //teletransportar
 if (teletrasportacion == true) {
@@ -160,7 +170,6 @@ if (teletrasportacion == true) {
     timerTs = 100;
 	
 }
-
 
 
 
