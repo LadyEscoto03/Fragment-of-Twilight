@@ -26,7 +26,7 @@ animacion=true;
 
 teletrasportacion=false;
 timerTs=0;
-
+imgTs=false;
 
 
 

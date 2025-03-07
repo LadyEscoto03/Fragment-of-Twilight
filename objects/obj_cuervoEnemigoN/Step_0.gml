@@ -111,6 +111,7 @@ if (place_free(x, y + 1)){
 
 
 if(collision_circle(x,y,24,obj_player,false,false)){
+	
 	if(animacion==true){
 		animacion=false;
 		var num=choose(1,2);
@@ -133,12 +134,14 @@ if(collision_circle(x,y,24,obj_player,false,false)){
 if (!collision_circle(x, y, 96, obj_player, false, false)) {
     if (timerTs-- <= 0) {
 		estado="teletransportacion";   
+		
     }
 	
 }
 
 //teletransportar
 if (teletrasportacion == true) {
+
     if (!instance_exists(obj_ts_control)) {
         instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_ts_control);
     }
@@ -154,7 +157,7 @@ if (teletrasportacion == true) {
     }
 	//reinicar datos
     teletrasportacion = false;
-    timerTs = 200;
+    timerTs = 100;
 	
 }
 
