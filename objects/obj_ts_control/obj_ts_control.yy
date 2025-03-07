@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cuervoEnemigoN",
+  "%Name":"obj_ts_control",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_cuervoEnemigoN",
+  "name":"obj_ts_control",
   "overriddenProperties":[],
   "parent":{
-    "name":"CuervoEnemigoNoche",
-    "path":"folders/Objects/enemigos-nocturnos/CuervoEnemigoNoche.yy",
+    "name":"Teletransportacion",
+    "path":"folders/Objects/Teletransportacion.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_cuervoN_caminar",
-    "path":"sprites/spr_cuervoN_caminar/spr_cuervoN_caminar.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
