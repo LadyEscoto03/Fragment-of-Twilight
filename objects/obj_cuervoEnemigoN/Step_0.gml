@@ -113,17 +113,13 @@ if (place_free(x, y + 1)){
 if(collision_circle(x,y,24,obj_player,false,false)){
 	if(animacion==true){
 		animacion=false;
-		var num=choose(1,2,3);
+		var num=choose(1,2);
 		switch(num){
 			case 1:
 			estado="ataque1";
 			break;
 			case 2:
 			estado="ataque2";
-			break;
-			case 3:
-			estado="ataque3";
-			teletrasportacion=true;
 			break;
 		}
 	}	
@@ -132,33 +128,36 @@ if(collision_circle(x,y,24,obj_player,false,false)){
 	animacion=true;
 }
 
-if(teletrasportacion==true){
-	var player = instance_find(obj_player, 0);
 
-	if(player!=noone){
-	
-		var distancia=28;
-		var tp_x,tp_y;
-	
-	
-		if(player.image_xscale==-1){
-		
-			tp_x=player.x+distancia;
-		
-		}else if(player.image_xscale==1){
-			tp_x=player.x-distancia;
-		}
-	
-		tp_y = player.y;
-	
-		if (!place_meeting(tp_x, tp_y, obj_player)) {
- 
-			x = tp_x;
-			y = tp_y;
-		}	
-	}
+//área para teletransportar
+if (!collision_circle(x, y, 96, obj_player, false, false)) {
+    if (timerTs-- <= 0) {
+		estado="teletransportacion";   
+    }
 	
 }
+
+//teletransportar
+if (teletrasportacion == true) {
+    if (!instance_exists(obj_ts_control)) {
+        instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_ts_control);
+    }
+    
+    if (instance_exists(obj_teletransportador)) {
+       //cambiar posiciones
+        x = obj_teletransportador.x;
+        y = obj_teletransportador.y;
+        
+        //destruir instancias para que no interfieran en futuras teletransportaciones
+        instance_destroy(obj_ts_control);
+		instance_destroy(obj_teletransportador);
+    }
+	//reinicar datos
+    teletrasportacion = false;
+    timerTs = 200;
+	
+}
+
 
 
 
@@ -184,16 +183,18 @@ switch(estado){
 		animacion=true;
 	}
 	break;
-	case "ataque3":
-	sprite_index=spr_cuervoN_ataque3;
-	if (image_index >= image_number - 1) {
-		animacion=true;
-		teletrasportacion=false;
+	
+	case "teletransportacion":
+	sprite_index=spr_cuervoN_teletransportacion;
+	if (floor(image_index) == 11) {
+		timerTs = 200;
+		teletrasportacion = true;
 	}
-	break;
 
-	
-	
+	if (image_index >= image_number - 1) {
+		animacion=false;
+	}
+	break;	
 }
 
 
