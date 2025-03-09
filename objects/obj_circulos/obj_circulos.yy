@@ -11,8 +11,8 @@
   "name":"obj_circulos",
   "overriddenProperties":[],
   "parent":{
-    "name":"jefeDia",
-    "path":"folders/Objects/AvisosLanzamiento/jefeDia.yy",
+    "name":"AvisosLanzamiento",
+    "path":"folders/Objects/AvisosLanzamiento.yy",
   },
   "parentObjectId":null,
   "persistent":false,

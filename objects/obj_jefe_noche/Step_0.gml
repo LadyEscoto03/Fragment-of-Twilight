@@ -29,9 +29,10 @@ else {
 
 switch (estado) {
     case "hechizo":
+	
         sprite_index = spr_jefe_noche_hechizo;
         if (ataque==false and(floor(image_index)==6)) { 
-            instance_create_layer(x,y,"lanzamientos",obj_hechizoJefeNoche);
+            instance_create_layer(x,y,"lanzamientos",obj_circulos);
             ataque=true;
         }
         break;

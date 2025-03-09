@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_hechizo",
+  "%Name":"obj_controladorAvisos",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_hechizo",
+  "name":"obj_controladorAvisos",
   "overriddenProperties":[],
   "parent":{
-    "name":"hechizo",
-    "path":"folders/Objects/AvisosLanzamiento/jefeNoche/hechizo.yy",
+    "name":"AvisosLanzamiento",
+    "path":"folders/Objects/AvisosLanzamiento.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_hechizo",
-    "path":"sprites/spr_hechizo/spr_hechizo.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

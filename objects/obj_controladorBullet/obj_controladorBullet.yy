@@ -9,8 +9,8 @@
   "name":"obj_controladorBullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bullet",
-    "path":"folders/Objects/Bullet.yy",
+    "name":"360",
+    "path":"folders/Objects/Bullet/360.yy",
   },
   "parentObjectId":null,
   "persistent":false,
