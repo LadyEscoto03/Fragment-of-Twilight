@@ -27,11 +27,31 @@ else {
     }
 }
 
+
+
 switch (estado) {
     case "hechizo":
+	
         sprite_index = spr_jefe_noche_hechizo;
         if (ataque==false and(floor(image_index)==6)) { 
-            instance_create_layer(x,y,"lanzamientos",obj_hechizoJefeNoche);
+			var num=choose(1,2);
+			switch(num){
+				case 1:
+				for(var i=0;i<5;i++){
+					var direccion =irandom_range(0,360);
+					var ejeX=obj_player.x+lengthdir_x(96,direccion);
+					var ejeY=obj_player.y+lengthdir_y(96,direccion);
+					instance_create_layer(ejeX,ejeY,"lanzamientos",obj_circulos_random);
+				}
+				 
+				break;
+				
+				case 2:
+				instance_create_layer(obj_player.x,obj_player.y-64,"lanzamientos",obj_circulos_360);
+				
+				break;
+			}
+           
             ataque=true;
         }
         break;

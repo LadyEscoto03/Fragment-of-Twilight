@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_fantasma_ataque",
+  "%Name":"obj_controladorRandom",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_fantasma_ataque",
+  "name":"obj_controladorRandom",
   "overriddenProperties":[],
   "parent":{
-    "name":"ataque",
-    "path":"folders/Objects/enemigos-nocturnos/Fantasma/ataque.yy",
+    "name":"AvisosLanzamiento",
+    "path":"folders/Objects/AvisosLanzamiento.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_disparo_fantasma",
-    "path":"sprites/spr_disparo_fantasma/spr_disparo_fantasma.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
