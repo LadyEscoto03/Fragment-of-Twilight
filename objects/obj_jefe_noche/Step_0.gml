@@ -27,6 +27,8 @@ else {
     }
 }
 
+
+
 switch (estado) {
     case "hechizo":
 	
