@@ -41,6 +41,7 @@
     {"$GMFolder":"","%Name":"noche","folderPath":"folders/Objects/Jugador/noche.yy","name":"noche","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"naturaleza","folderPath":"folders/Objects/naturaleza.yy","name":"naturaleza","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paredes","folderPath":"folders/Objects/Paredes.yy","name":"Paredes","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Particulas","folderPath":"folders/Objects/Particulas.yy","name":"Particulas","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Teletransportacion","folderPath":"folders/Objects/Teletransportacion.yy","name":"Teletransportacion","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},

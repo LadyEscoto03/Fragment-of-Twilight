@@ -37,7 +37,6 @@ switch (estado) {
 			var num=choose(1,2);
 			switch(num){
 				case 1:
-				
 				for(var i=0;i<5;i++){
 					var direccion =irandom_range(0,360);
 					var ejeX=obj_player.x+lengthdir_x(96,direccion);
@@ -46,6 +45,7 @@ switch (estado) {
 				}
 				 
 				break;
+				
 				case 2:
 				instance_create_layer(obj_player.x,obj_player.y-64,"lanzamientos",obj_circulos_360);
 				
