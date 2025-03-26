@@ -7,28 +7,26 @@ if (estado == "ataqueLargo") {
         estado = "caminar";
         ataque = false;
     }
-} 
-// Si no está en ataque largo, evaluar las condiciones normales
-else {
+} else {
     if (temporizadorAtaqueLargo >= 0) {
         estado = "caminar";
     }
 
-    // Si el jugador está fuera del radio de 96 y el temporizador de ataque largo se ha agotado, ejecutar ataque largo
-    if (!collision_circle(x, y, 90, obj_player, false, false) && temporizadorAtaqueLargo-- <= 0) {
+    if (!collision_circle(x, y, 90, obj_player, false, false) && temporizadorAtaqueLargo-- <= 0 ) {
         estado = "ataqueLargo";
         ataque = false;
         temporizadorAtaqueLargo = 150;
     } 
-    // Si el jugador está dentro del radio de 96, ejecutar ataque corto
     else if (collision_circle(x, y, 90, obj_player, false, false)) {
         estado = "ataqueCorto";
     } 
-    // Si no está atacando, simplemente caminar
+   
     else if (estado != "ataqueLargo" && estado != "caminar") {
         estado = "ataqueCorto";
     }
 }
+
+
 
 // Manejo de estados
 switch (estado) {
@@ -42,29 +40,18 @@ switch (estado) {
             var num=choose(1,2);
 			switch(num){
 				case 1:
-				for(var i=0;i<5;i++){
-					var direccion =irandom_range(0,360);
-					var ejeX=obj_player.x+lengthdir_x(96,direccion);
-					var ejeY=obj_player.y+lengthdir_y(96,direccion);
-					instance_create_layer(ejeX,ejeY,"lanzamientos",obj_circulos_random);
-				}
-				 
+				instance_create_layer(x,y-64,"Instances",obj_inicioHechizo);
 				break;
+				
 				case 2:
-				instance_create_layer(obj_player.x,obj_player.y-64,"lanzamientos",obj_circulos_360);
+				
 				
 				break;
 			}
             ataque = true;
         }
 		
-		
-		
-		
-		
-		
-		
-		
+
         break;
 
     case "caminar":
