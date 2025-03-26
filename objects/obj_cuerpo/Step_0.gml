@@ -39,10 +39,8 @@ image_angle=dir+90;
 
 
 
-if(position_meeting(mouse_x,mouse_y,id)){
-	if(keyboard_check(vk_enter)){
-		instance_destroy();
-	}
+if(place_meeting(x,y,obj_cuervoDia)){
+	instance_destroy();
 
 }
 
