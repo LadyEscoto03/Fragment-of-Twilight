@@ -17,8 +17,10 @@ if (estado == "ataqueLargo") {
         ataque = false;
         temporizadorAtaqueLargo = 150;
     } 
-    else if (collision_circle(x, y, 90, obj_player, false, false)) {
+    else if (collision_circle(x, y, 90, obj_player, false, false) and temCorto--<=0) {
         estado = "ataqueCorto";
+		
+		
     } 
    
     else if (estado != "ataqueLargo" && estado != "caminar") {
@@ -44,7 +46,7 @@ switch (estado) {
 				break;
 				
 				case 2:
-				
+				instance_create_layer(x,y-64,"Instances",obj_controladorHechizo);
 				
 				break;
 			}
@@ -59,7 +61,16 @@ switch (estado) {
         break;
 
     case "ataqueCorto":
-        sprite_index = spr_jefe_ataque;
+	if (sprite_index != spr_jefe_ataque) {
+            sprite_index = spr_jefe_ataque;
+            image_index = 0;
+        }
+		 if (image_index >= image_number - 1) {
+			  image_index = 0;
+			  temCorto=100;
+			  estado = "caminar";
+		  
+        }
         break;
 }
 
