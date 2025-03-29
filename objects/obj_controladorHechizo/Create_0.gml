@@ -2,10 +2,23 @@
 // You can write your code in this editor
 
 randomize(); 
-alarma_seleccionada = irandom(3); 
 
-for (var i = 0; i <3; i++) {
-    alarm[i] = -1;
+
+num= choose(0,1,2,3);
+
+switch(num){
+	case 0:
+	alarm[0] = 1; 
+	break;
+	case 1:
+	alarm[1] = 1;
+	break;
+	case 2:
+	alarm[2] = 1;
+	break;
+	case 3:
+	alarm[3] = 1;
+	break;
 }
 
-alarm[alarma_seleccionada] = 60; 
+alarm[4]=400;
