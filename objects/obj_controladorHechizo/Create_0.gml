@@ -1,13 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+randomize(); 
+alarma_seleccionada = irandom(3); 
 
+for (var i = 0; i <3; i++) {
+    alarm[i] = -1;
+}
 
-alarm[0] = 100;
-
-alarm[1] = 200;
-
-alarm[2] = 300;
-
-alarm[3] = 400;
-
+alarm[alarma_seleccionada] = 60; 
