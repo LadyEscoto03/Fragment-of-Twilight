@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_controlHechizo",
+  "%Name":"obj_rotacion",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_controlHechizo",
+  "name":"obj_rotacion",
   "overriddenProperties":[],
   "parent":{
-    "name":"semillas",
-    "path":"folders/Objects/Lanzamientos/semillas.yy",
+    "name":"rotacion",
+    "path":"folders/Objects/rotacion.yy",
   },
   "parentObjectId":null,
   "persistent":false,

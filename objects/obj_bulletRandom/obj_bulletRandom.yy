@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"random",
-    "path":"folders/Objects/Bullet/random.yy",
+    "path":"folders/Objects/Lanzamientos/random.yy",
   },
   "parentObjectId":null,
   "persistent":false,

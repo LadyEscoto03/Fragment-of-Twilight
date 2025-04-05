@@ -13,8 +13,8 @@
   "name":"obj_controladorHechizo",
   "overriddenProperties":[],
   "parent":{
-    "name":"CirculosBullet",
-    "path":"folders/Objects/Bullet/CirculosBullet.yy",
+    "name":"ataqueSemillas",
+    "path":"folders/Objects/Lanzamientos/ataqueSemillas.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"360",
-    "path":"folders/Objects/Bullet/360.yy",
+    "path":"folders/Objects/Lanzamientos/360.yy",
   },
   "parentObjectId":null,
   "persistent":false,

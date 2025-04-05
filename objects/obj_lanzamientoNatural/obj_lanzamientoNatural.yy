@@ -8,8 +8,8 @@
   "name":"obj_lanzamientoNatural",
   "overriddenProperties":[],
   "parent":{
-    "name":"Nature",
-    "path":"folders/Objects/Bullet/Nature.yy",
+    "name":"semillas",
+    "path":"folders/Objects/Lanzamientos/semillas.yy",
   },
   "parentObjectId":null,
   "persistent":false,
