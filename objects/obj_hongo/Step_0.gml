@@ -38,7 +38,6 @@ switch (estado) {
 
         if (floor(image_index) == frameDisparo && frecuenciaDisparo <= 0) {
             var tiro = instance_create_layer(x, y, "Disparos", obj_disparoHongo);
-            tiro.NumVX *= image_xscale;
             frecuenciaDisparo = 5;
         }
 
