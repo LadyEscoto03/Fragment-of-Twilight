@@ -213,6 +213,7 @@
     {"id":{"name":"spr_jugador_sanar","path":"sprites/spr_jugador_sanar/spr_jugador_sanar.yy",},},
     {"id":{"name":"spr_jugador_tripeAtaque","path":"sprites/spr_jugador_tripeAtaque/spr_jugador_tripeAtaque.yy",},},
     {"id":{"name":"spr_lava","path":"sprites/spr_lava/spr_lava.yy",},},
+    {"id":{"name":"spr_lejos","path":"sprites/spr_lejos/spr_lejos.yy",},},
     {"id":{"name":"spr_luces1","path":"sprites/spr_luces1/spr_luces1.yy",},},
     {"id":{"name":"spr_luces2","path":"sprites/spr_luces2/spr_luces2.yy",},},
     {"id":{"name":"spr_luces3","path":"sprites/spr_luces3/spr_luces3.yy",},},
