@@ -2,6 +2,10 @@
 // You can write your code in this editor
 
 // Si el jefe ya está en ataque largo, dejar que termine la animación antes de cambiar de estado
+
+if(!instance_exists(obj_InicioJefe)){
+	//show_message("hola");
+	
 if (estado == "ataqueLargo") {
     if (image_index >= image_number - 1) {
         estado = "caminar";
@@ -106,3 +110,6 @@ y += vsp;
 if (hsp != 0) {
     image_xscale = sign(hsp);
 }
+
+}
+
