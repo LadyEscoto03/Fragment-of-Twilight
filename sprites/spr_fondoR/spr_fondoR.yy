@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Fondos",
-    "path":"folders/Sprites/Fondos.yy",
+    "name":"nivel1",
+    "path":"folders/Sprites/Fondos/nivel1.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
