@@ -4,9 +4,11 @@
 // Si el jefe ya está en ataque largo, dejar que termine la animación antes de cambiar de estado
 
 if(!instance_exists(obj_InicioJefe)){
-	//show_message("hola");
 	
-if (estado == "ataqueLargo") {
+	
+	if(vida<=0){
+		estado="muerte";
+	}else if (estado == "ataqueLargo") {
     if (image_index >= image_number - 1) {
         estado = "caminar";
         ataque = false;
@@ -19,7 +21,7 @@ if (estado == "ataqueLargo") {
     if (!collision_circle(x, y, 90, obj_player, false, false) && temporizadorAtaqueLargo-- <= 0 ) {
         estado = "ataqueLargo";
         ataque = false;
-        temporizadorAtaqueLargo = 150;
+        temporizadorAtaqueLargo = 450;
     } 
     else if (collision_circle(x, y, 90, obj_player, false, false) and temCorto--<=0) {
         estado = "ataqueCorto";
@@ -46,18 +48,16 @@ switch (estado) {
             var num=choose(1,2);
 			switch(num){
 				case 1:
-				instance_create_layer(x,y-64,"Instances",obj_inicioHechizo);
+				instance_create_layer(obj_player.x,obj_player.y-96,"Instances",obj_inicioHechizo);
 				break;
 				
 				case 2:
-				instance_create_layer(x,y-64,"Instances",obj_controladorHechizo);
+				instance_create_layer(obj_player.x,obj_player.y-96,"Instances",obj_controladorHechizo);
 				
 				break;
 			}
             ataque = true;
         }
-		
-
         break;
 
     case "caminar":
@@ -75,8 +75,21 @@ switch (estado) {
 			  estado = "caminar";
 		  
         }
-        break;
+		break;
+		
+		case "muerte":
+		sprite_index = spr_jefe_muerte;
+		 if (image_index >= image_number - 1) {
+			  instance_destroy();
+		  
+        }
+		break;
+		
 }
+
+
+
+
 
 // Movimiento
 var anguloDireccion = point_direction(x, y, obj_player.x, obj_player.y);
@@ -110,6 +123,24 @@ y += vsp;
 if (hsp != 0) {
     image_xscale = sign(hsp);
 }
+if(place_meeting(x,y,obj_cuervoDestrucion)){
+	if(danio==false){
+		vida-=10;
+		danio=true;
+	}
+	
+}else{
+	danio=false;
+}
+if(obj_player.estado=="attack") and place_meeting(x,y,obj_player){
+	if(danioEspada==false){
+		vida-=15;
+		danioEspada=true;
+	}
+}else{
+	danioEspada=false;
+}
+
 
 }
 

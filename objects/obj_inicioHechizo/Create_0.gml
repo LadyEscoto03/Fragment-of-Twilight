@@ -2,4 +2,4 @@
 // You can write your code in this editor
 instance_create_layer(x,y,"Instances",obj_controlHechizo);
 
-global.time=600;
+global.time=300;

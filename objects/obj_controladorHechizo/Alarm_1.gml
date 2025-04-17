@@ -4,11 +4,12 @@
 
 
 
-for (var i = 0; i < 360; i += 5) {
+for (var i = 0; i < 360; i += 20) {
     var a = instance_create_layer(x, y, "Instances", obj_explosion);
-    a.speed = 3; 
+    a.speed = 1.5; 
     a.direction = i;  
 }
 
 
 alarm[1] = 100;
+

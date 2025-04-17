@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 dir=1;
-movespeed=0.5;
+movespeed=1;
 grv=0.3;
 
 hsp=0;
@@ -14,3 +14,10 @@ frecuenciaAnimacion=0;
 
 estado="";
 estadoAtaque=0;
+
+vida=100;
+vida_max=100;
+danio=false;
+danioEspada=false;
+
+ataqueC=0;

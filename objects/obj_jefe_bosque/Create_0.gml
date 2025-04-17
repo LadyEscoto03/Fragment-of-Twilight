@@ -20,3 +20,13 @@ ataqueCorto=false;
 
 timerH=150;
 
+
+
+
+vida=200;
+vida_max=200;
+
+danio=false;
+danioEspada=false;
+
+

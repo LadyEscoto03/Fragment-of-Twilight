@@ -9,3 +9,6 @@ if not (place_free(x,y)){
 if(place_meeting(x,y,obj_hongo)){
 	instance_destroy();
 }
+if(place_meeting(x,y,obj_jefe_bosque)){
+	instance_destroy();
+}

@@ -4,11 +4,12 @@
 
 
 
-for (var i = 0; i < 800; i += 50) {
-    var a = instance_create_layer(i, 0, "Instances", obj_explosion); 
-    a.speed = 3; 
-    a.direction = 270;  
+
+
+for (var i = 0; i < room_width; i += 80) {
+    var a = instance_create_layer(i, 0, "Instances", obj_explosion);
+    a.speed = 2.5;
+    a.direction = 270;
 }
+alarm[3] = 64;
 
-
-alarm[3] = 50;
