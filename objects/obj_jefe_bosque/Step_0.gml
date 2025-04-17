@@ -19,7 +19,7 @@ if (estado == "ataqueLargo") {
     if (!collision_circle(x, y, 90, obj_player, false, false) && temporizadorAtaqueLargo-- <= 0 ) {
         estado = "ataqueLargo";
         ataque = false;
-        temporizadorAtaqueLargo = 150;
+        temporizadorAtaqueLargo = 350;
     } 
     else if (collision_circle(x, y, 90, obj_player, false, false) and temCorto--<=0) {
         estado = "ataqueCorto";
@@ -46,11 +46,11 @@ switch (estado) {
             var num=choose(1,2);
 			switch(num){
 				case 1:
-				instance_create_layer(x,y-64,"Instances",obj_inicioHechizo);
+				instance_create_layer(obj_player.x,obj_player.y-96,"Instances",obj_inicioHechizo);
 				break;
 				
 				case 2:
-				instance_create_layer(x,y-64,"Instances",obj_controladorHechizo);
+				instance_create_layer(obj_player.x,obj_player.y-96,"Instances",obj_controladorHechizo);
 				
 				break;
 			}

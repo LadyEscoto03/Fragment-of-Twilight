@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if (collision_circle(x, y, 96, obj_player, false, false)) {
+if (collision_circle(x, y, 164, obj_player, false, false)) {
     estado = "ataque";
 	
 } else {
@@ -18,8 +18,8 @@ switch (estado) {
         sprite_index = spr_plantaA_ataque;
         // Solo dispara una vez en el frame 6
         if (floor(image_index) ==2 && ataqueIiro == 0) {
-            for (var i = 0; i < 4; i++) {
-                instance_create_layer(x + (i * 10), y-10, "Disparos", obj_semilla);
+            for (var i = 0; i < 2; i++) {
+                instance_create_layer(x + (i * 10), y-10, "Instances", obj_semilla);
             }
             ataqueIiro = 1; 
         }

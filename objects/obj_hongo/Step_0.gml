@@ -37,7 +37,7 @@ switch (estado) {
         var frameDisparo = 8;
 
         if (floor(image_index) == frameDisparo && frecuenciaDisparo <= 0) {
-            var tiro = instance_create_layer(x, y, "Disparos", obj_disparoHongo);
+            var tiro = instance_create_layer(x, y, "Instances", obj_disparoHongo);
             frecuenciaDisparo = 5;
         }
 
