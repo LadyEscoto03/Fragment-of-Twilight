@@ -2,12 +2,9 @@
 // You can write your code in this editor
 // Detectar si el jugador está en rango
 var enRangoLargo = collision_circle(x, y, 182, obj_player, false, false);
-var enRangoCercano = collision_circle(x, y, 22, obj_player, false, false);
 
-// Cambio de estado basado en la proximidad del jugador
-if (enRangoCercano) {
-    estado = "ataqueCorto";
-} else if (enRangoLargo && estado == "correr" && temporizador-- <= 0) {
+
+ if (enRangoLargo && estado == "correr" && temporizador-- <= 0) {
     estado = "ataqueLargaDistancia";
     temporizador = 60;
 }
@@ -49,21 +46,8 @@ switch (estado) {
             frecuenciaDisparo = 0;
         }
         break;
-
-    case "ataqueCorto":
-        if (image_index >= image_number - 1) {
-            sprite_index = choose(spr_hongo_ataque1, spr_hongo_ataque2);
-            image_index = 0;
-        }
-
-        if (!enRangoCercano) {
-            estado = "correr";
-            temporizador = 60;
-        }
-        break;
 		
 		case "danio":
-		sprite_index = spr_hongo_danio;
 		if (image_index >= image_number - 1) {
            estado="";
         }
@@ -114,3 +98,28 @@ y += vsp;
 if (hsp != 0) {
     image_xscale = sign(hsp);
 }
+
+
+
+
+if(place_meeting(x,y,obj_cuervoDestrucion)){
+	if(danio==false){
+		vida-=10;
+		danio=true;
+	}
+	
+}else{
+	danio=false;
+}
+if(obj_player.estado=="attack") and place_meeting(x,y,obj_player){
+	if(danioEspada==false){
+		vida-=15;
+		danioEspada=true;
+	}
+}else{
+	danioEspada=false;
+}
+
+
+
+

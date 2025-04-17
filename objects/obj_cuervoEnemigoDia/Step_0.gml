@@ -3,7 +3,7 @@
 
 estado="caminar";
 if(collision_circle(x,y,96,obj_player,false,false)){
-	movespeed=1;
+	movespeed=2;
 	var anguloDireccion=point_direction(x,y,obj_player.x,obj_player.y);
 	hsp=lengthdir_x(movespeed,anguloDireccion);
 	if(collision_circle(x,y,40,obj_player,false,false)){

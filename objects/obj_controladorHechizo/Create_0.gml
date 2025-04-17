@@ -3,8 +3,8 @@
 
 randomize(); 
 
-
 num= choose(0,1,2,3);
+
 
 switch(num){
 	case 0:

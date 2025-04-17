@@ -11,3 +11,6 @@ vsp=0;
 estado="";
 
 seguir=false;
+
+vida=100;
+vida_max=100;
