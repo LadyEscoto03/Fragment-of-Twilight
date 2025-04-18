@@ -1,13 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(collision_circle(x,y,132,obj_player,false,false)){
+if(collision_circle(x,y,132,obj_player_noche,false,false)){
 	if(tempAtaque--<=0){
 		estado="ataque";
 	}
-	var dist=point_distance(x,y,obj_player.x,obj_player.y);
+	var dist=point_distance(x,y,obj_player_noche.x,obj_player_noche.y);
 	if(dist>=96){
-		motion_set(point_direction(x, y, obj_player.x, obj_player.y),movespeed);
+		motion_set(point_direction(x, y, obj_player_noche.x, obj_player_noche.y),movespeed);
 		friction=0;
 	}
 	seguir=false;
@@ -31,7 +31,7 @@ switch(estado){
 	case "ataque":
 	sprite_index=spr_ojo_ataque;
 	if(floor(image_index)==10 and ataqueIiro<=0){
-		var tiro=instance_create_layer(x,y,"Disparos",obj_ojo_disparo);
+		var tiro=instance_create_layer(x,y,"Instances",obj_ojo_disparo);
 		ataqueIiro=60;	
 	}
 	if(image_index>=image_number-1){

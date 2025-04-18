@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+if(!instance_exists(obj_InicioJefe)){
+	
 if(estado=="hechizo"){
     tiempo_hechizo--; 
     if(tiempo_hechizo<=0){
@@ -11,7 +12,7 @@ if(estado=="hechizo"){
     }
 } 
 else {
-    if (!collision_circle(x,y,82,obj_player,false,false)) {
+    if (!collision_circle(x,y,82,obj_player_noche,false,false)) {
         if(tem>0){
 			tem--;
 		}
@@ -22,7 +23,7 @@ else {
         }else{
 			estado="caminar";
         }
-    }else if(collision_circle(x,y,46,obj_player,false,false)) {
+    }else if(collision_circle(x,y,46,obj_player_noche,false,false)) {
         estado="espada";
     }
 }
@@ -39,15 +40,15 @@ switch (estado) {
 				case 1:
 				for(var i=0;i<5;i++){
 					var direccion =irandom_range(0,360);
-					var ejeX=obj_player.x+lengthdir_x(96,direccion);
-					var ejeY=obj_player.y+lengthdir_y(96,direccion);
+					var ejeX=obj_player_noche.x+lengthdir_x(96,direccion);
+					var ejeY=obj_player_noche.y+lengthdir_y(96,direccion);
 					instance_create_layer(ejeX,ejeY,"lanzamientos",obj_circulos_random);
 				}
 				 
 				break;
 				
 				case 2:
-				instance_create_layer(obj_player.x,obj_player.y-64,"lanzamientos",obj_circulos_360);
+				instance_create_layer(obj_player_noche.x,obj_player_noche.y-64,"lanzamientos",obj_circulos_360);
 				
 				break;
 			}
@@ -66,7 +67,7 @@ switch (estado) {
 }
 
 
-var anguloDireccion=point_direction(x,y,obj_player.x,obj_player.y);
+var anguloDireccion=point_direction(x,y,obj_player_noche.x,obj_player_noche.y);
 
 // Si NO está en estado "hechizo", puede moverse
 if (estado != "hechizo") {
@@ -85,8 +86,8 @@ if(place_meeting(x+hsp,y,obj_paredInvisible)){
     }
     hsp=0;
 }
-if (collision_circle(x, y, 32, obj_player, false, false)) {
-    var angulo = point_direction(x, y, obj_player.x, obj_player.y) + 180;
+if (collision_circle(x, y, 32, obj_player_noche, false, false)) {
+    var angulo = point_direction(x, y, obj_player_noche.x, obj_player_noche.y) + 180;
     x+=lengthdir_x(1, angulo);
 }else{
 	x+=hsp;
@@ -103,4 +104,5 @@ y+=vsp;
 
 if(hsp!=0){
     image_xscale=sign(hsp);
+}
 }

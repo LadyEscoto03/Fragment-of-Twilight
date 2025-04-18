@@ -43,7 +43,7 @@ switch (estado) {
         sprite_index = spr_jugador_ataqueCuervo;
 
 		if(floor(image_index)==2 and temAtaque1<=0){
-			 var cuervo=instance_create_layer(x+(16*image_xscale),y,"Disparos",obj_cuervoNoche);
+			 var cuervo=instance_create_layer(x+(16*image_xscale),y,"Instances",obj_cuervoNoche);
 			 cuervo.image_xscale=image_xscale;
 			 cuervo.NumVX*=image_xscale; 
 			temAtaque1=5;
@@ -58,7 +58,7 @@ switch (estado) {
         sprite_index=spr_jugador_tripeAtaque;
 		
 		if (floor(image_index)==3 and temAtaque2<=0) {
-			var cuervo_centro=instance_create_layer(x+(18*image_xscale),y,"Disparos",obj_cuervoNoche);
+			var cuervo_centro=instance_create_layer(x+(18*image_xscale),y,"Instances",obj_cuervoNoche);
 			cuervo_centro.image_xscale=image_xscale;
 			cuervo_centro.NumVX*=image_xscale;
 			alarm[0]=5;
