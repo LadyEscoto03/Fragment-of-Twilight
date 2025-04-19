@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_jugador_salto",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":50,
-  "bbox_left":0,
-  "bbox_right":42,
+  "bbox_left":16,
+  "bbox_right":41,
   "bbox_top":0,
   "collisionKind":5,
   "collisionTolerance":0,

@@ -10,21 +10,22 @@ if(estado=="hechizo"){
         tiempo_hechizo=60;
         ataque=false;
     }
-} 
-else {
-    if (!collision_circle(x,y,82,obj_player_noche,false,false)) {
+} else {
+    if (!collision_circle(x,y,75,obj_player_noche,false,false)) {
         if(tem>0){
 			tem--;
 		}
 
-        if(tem<=0){
+        if(tem<=0 and !instance_exists(obj_bulletRandom) and !instance_exists(obj_controladorBullet)){
             estado="hechizo";
             tem=300;
         }else{
 			estado="caminar";
         }
-    }else if(collision_circle(x,y,46,obj_player_noche,false,false)) {
+    }else if(collision_circle(x,y,46,obj_player_noche,false,false)and enEspada--<=0){
         estado="espada";
+		movespeed=0;
+		
     }
 }
 
@@ -32,7 +33,6 @@ else {
 
 switch (estado) {
     case "hechizo":
-	
         sprite_index = spr_jefe_noche_hechizo;
         if (ataque==false and(floor(image_index)==6)) { 
 			var num=choose(1,2);
@@ -42,13 +42,13 @@ switch (estado) {
 					var direccion =irandom_range(0,360);
 					var ejeX=obj_player_noche.x+lengthdir_x(96,direccion);
 					var ejeY=obj_player_noche.y+lengthdir_y(96,direccion);
-					instance_create_layer(ejeX,ejeY,"lanzamientos",obj_circulos_random);
+					instance_create_layer(ejeX,ejeY,"Instances",obj_circulos_random);
 				}
 				 
 				break;
 				
 				case 2:
-				instance_create_layer(obj_player_noche.x,obj_player_noche.y-64,"lanzamientos",obj_circulos_360);
+				instance_create_layer(obj_player_noche.x,obj_player_noche.y-64,"Instances",obj_circulos_360);
 				
 				break;
 			}
@@ -58,12 +58,24 @@ switch (estado) {
         break;
 
     case "caminar":
-        sprite_index = spr_jefe_noche_caminar;
-        break;
+	movespeed=1.5;
+	sprite_index = spr_jefe_noche_caminar;
+	break;
 
     case "espada":
-        sprite_index = spr_jefe_noche_ataqueEspada;
-        break;
+	if (sprite_index != spr_jefe_noche_ataqueEspada) {
+            sprite_index = spr_jefe_noche_ataqueEspada;
+            image_index = 0;
+	}
+	
+	if(image_index>=image_number-1){
+		enEspada=100;
+		estado="espera";
+	}
+	break;
+	case "espera":
+	sprite_index=spr_jefe_noche_idle;
+	break;
 }
 
 

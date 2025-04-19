@@ -19,7 +19,7 @@ if(seguir==true){
 	if(cambioDireccion==0){
 		motion_set(irandom(360),movespeed);
 		//actualizar el tiempo para el proximo cambio de dirección
-		cambioDireccion=irandom_range(120, 180);//nuevo tiempo entre 1 y 2 segundos
+		cambioDireccion=irandom_range(60, 120);//nuevo tiempo entre 1 y 2 segundos
 	}
 }
 
@@ -36,7 +36,7 @@ switch(estado){
 	}
 	if(image_index>=image_number-1){
 		estado="";
-		tempAtaque=200;
+		tempAtaque=60;
 		ataqueIiro=0;	
 	}
 	break;

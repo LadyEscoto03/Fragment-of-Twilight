@@ -138,7 +138,7 @@ if(collision_circle(x,y,16,obj_player_noche,false,false)){
 }
 
 //área para teletransportar
-if (!collision_circle(x, y, 96, obj_player_noche, false, false) and seguirPlayer==true) {
+if (!collision_circle(x, y, 164, obj_player_noche, false, false) and seguirPlayer==true) {
     if (timerTs-- <= 0) {
 		move_x=0;
 		estado="teletransportacion";   
@@ -146,9 +146,6 @@ if (!collision_circle(x, y, 96, obj_player_noche, false, false) and seguirPlayer
     }
 	
 }
-
-
-
 //teletransportar
 if (teletrasportacion == true) {
 
