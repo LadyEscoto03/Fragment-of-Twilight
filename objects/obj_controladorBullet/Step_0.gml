@@ -4,8 +4,8 @@
 
 shotAngle = (shotAngle + 10) mod 360;
 
-var _bullet = instance_create_layer(x,y,layer, obj_bullet);
-_bullet.speed = 1;
+var _bullet = instance_create_layer(x,y,"Instances", obj_bullet);
+_bullet.speed = 2;
 _bullet.direction = shotAngle;
 
 tem--;

@@ -3,25 +3,25 @@
 // You can write your code in this editor
 
 //aplicar el movimiento seguiendo al player
-if(instance_exists(obj_player)){
+if(instance_exists(obj_player_noche)){
 	
 	//linea derecha 
-	if(collision_line(x,y,x+lengthdir_x(64, image_angle),y + lengthdir_y(64, image_angle),obj_player,false,false)){
+	if(collision_line(x,y,x+lengthdir_x(64, image_angle),y + lengthdir_y(64, image_angle),obj_player_noche,false,false)){
 		//show_message("derecha");
 		seguirPlayer=true;
-	} else if(collision_line(x,y,x+lengthdir_x(64, image_angle+180),y + lengthdir_y(64, image_angle+180),obj_player,false,false)){
+	} else if(collision_line(x,y,x+lengthdir_x(64, image_angle+180),y + lengthdir_y(64, image_angle+180),obj_player_noche,false,false)){
 		seguirPlayer=true;
 	}
 	if(seguirPlayer==true){
 		if(moverAbajoPared==false){
 			
-			if(obj_player.x>x){
+			if(obj_player_noche.x>x){
 				move_x=vel;//derecha
 				image_xscale=1;
-			}else if(obj_player.x<x){
+			}else if(obj_player_noche.x<x){
 				move_x=-vel;//izquierda
 				image_xscale=-1;
-			} else if(obj_player.x==x){
+			} else if(obj_player_noche.x==x){
 				move_x=0;
 			}
 		}
@@ -56,11 +56,11 @@ if(seguirPlayer==false){
 	image_angle=180;
 	grav = 0;
 
-	if (obj_player.x > x and place_free(x - 1, y)) {
+	if (obj_player_noche.x > x and place_free(x - 1, y)) {
 	    move_x = -vel; //izquierda
 		esquina=true;
 
-	} else if(obj_player.x < x ){
+	} else if(obj_player_noche.x < x ){
 	    move_x = vel;//derecha
 		esquina=true;
 	}
@@ -117,7 +117,7 @@ if (place_free(x, y + 1)){
 }
 
 
-if(collision_circle(x,y,16,obj_player,false,false)){
+if(collision_circle(x,y,16,obj_player_noche,false,false)){
 	
 	if(animacion==true){
 		
@@ -138,7 +138,7 @@ if(collision_circle(x,y,16,obj_player,false,false)){
 }
 
 //área para teletransportar
-if (!collision_circle(x, y, 96, obj_player, false, false) and seguirPlayer==true) {
+if (!collision_circle(x, y, 164, obj_player_noche, false, false) and seguirPlayer==true) {
     if (timerTs-- <= 0) {
 		move_x=0;
 		estado="teletransportacion";   
@@ -146,14 +146,11 @@ if (!collision_circle(x, y, 96, obj_player, false, false) and seguirPlayer==true
     }
 	
 }
-
-
-
 //teletransportar
 if (teletrasportacion == true) {
 
     if (!instance_exists(obj_ts_control)) {
-        instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_ts_control);
+        instance_create_layer(obj_player_noche.x, obj_player_noche.y, "Instances", obj_ts_control);
     }
     
     if (instance_exists(obj_teletransportador)) {

@@ -2,13 +2,13 @@
 // You can write your code in this editor
 
 if(aparecio==false){
-	if(collision_circle(x,y,96,obj_player,false,false)){
+	if(collision_circle(x,y,96,obj_player_noche,false,false)){
 		estado="aparecer";
 		aparecio=true;
 	}
 
 }
-if(collision_circle(x,y,32,obj_player,false,false)){
+if(collision_circle(x,y,32,obj_player_noche,false,false)){
 	estado="ataque";
 }
 
@@ -28,13 +28,13 @@ switch(estado){
 	
 	case "ataque":
 	sprite_index=spr_esqueleto_ataque;
-	if not(collision_circle(x,y,32,obj_player,false,false)){
+	if not(collision_circle(x,y,32,obj_player_noche,false,false)){
 		estado="caminar";
 	}
 	break;
 }
 if(caminar==true){
-	var anguloDireccion=point_direction(x,y,obj_player.x,obj_player.y);
+	var anguloDireccion=point_direction(x,y,obj_player_noche.x,obj_player_noche.y);
 	hsp=lengthdir_x(movespeed,anguloDireccion);
 	vsp+=grv;
 	if(place_meeting(x+hsp,y,obj_paredInvisible)){

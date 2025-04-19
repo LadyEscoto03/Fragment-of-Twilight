@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-depth=1;
+
 pared=false;
-movespeed=0.5;
+movespeed=1.5;
 
 
 estado="";
