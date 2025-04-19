@@ -31,7 +31,10 @@ imgTs=false;
 
 
 
+vida=100;
+vida_max=100;
 
+danio=0;
 
 
 

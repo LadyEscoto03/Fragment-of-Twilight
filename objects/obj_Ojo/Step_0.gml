@@ -1,7 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(collision_circle(x,y,132,obj_player_noche,false,false)){
+
+
+
+
+if (place_meeting(x, y, obj_player_noche) && obj_player_noche.estado == "ataque_espada1") {
+	if (floor(obj_player_noche.image_index) == 2 or floor(obj_player_noche.image_index) == 6) {
+		estado="muerte";
+	}
+} else if (place_meeting(x, y, obj_cuervoNoche)){
+	
+	estado="muerte";
+	
+} else if(collision_circle(x,y,132,obj_player_noche,false,false)){
 	if(tempAtaque--<=0){
 		estado="ataque";
 	}
@@ -23,10 +35,6 @@ if(seguir==true){
 	}
 }
 
-
-
-
-
 switch(estado){
 	case "ataque":
 	sprite_index=spr_ojo_ataque;
@@ -41,7 +49,9 @@ switch(estado){
 	}
 	break;
 	case "muerte":
+
 	sprite_index=spr_ojo_muerte;
+	
 	break;
 	default: 
 	sprite_index=spr_ojo_movimiento;

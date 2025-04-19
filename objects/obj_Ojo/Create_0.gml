@@ -8,3 +8,9 @@ estado="";
 
 tempAtaque=0;
 ataqueIiro=0;
+
+vida=100;
+vida_max=100;
+danio=false;
+
+global.ataqueOjo=false;

@@ -15,77 +15,15 @@ if(surface_exists(sombra_superficie)){
 	
 	gpu_set_blendmode(bm_subtract);
 	
-	//luciérnagas
-	if(instance_exists(obj_luz)){
-		var _num=instance_number(obj_luz);
-		for(var i=0;i<_num;i++){
-			var _ins=instance_find(obj_luz,i);
-			
-				draw_set_alpha(.8);
-				draw_circle(_ins.x,_ins.y,64+irandom(1),false);
-				
-				draw_set_alpha(.4);
-				draw_circle(_ins.x,_ins.y,96+irandom(1),false);
-				
-		}
-	}	
-	//disparo del ojo
-	if(instance_exists(obj_ojo_disparo)){
-		var _num=instance_number(obj_ojo_disparo);
-		for(var i=0;i<_num;i++){
-			var _ins=instance_find(obj_ojo_disparo,i);
-			
-				draw_set_alpha(.8);
-				draw_circle(_ins.x,_ins.y,64+irandom(1),false);
-				
-				draw_set_alpha(.4);
-				draw_circle(_ins.x,_ins.y,96+irandom(1),false);
-				
-		}
-	}	
-	//ataque del fantasma
-	if(instance_exists(obj_fantasma_ataque)){
-		var _num=instance_number(obj_fantasma_ataque);
-		for(var i=0;i<_num;i++){
-			var _ins=instance_find(obj_fantasma_ataque,i);
-			
-				draw_set_alpha(.8);
-				draw_circle(_ins.x,_ins.y,64+irandom(1),false);
-				
-				draw_set_alpha(.4);
-				draw_circle(_ins.x,_ins.y,96+irandom(1),false);
-				
-		}
-	}	
-	if(instance_exists(obj_bulletRandom)){
-		var _num=instance_number(obj_bulletRandom);
-		for(var i=0;i<_num;i++){
-			var _ins=instance_find(obj_bulletRandom,i);
-			
-				draw_set_alpha(.8);
-				draw_circle(_ins.x,_ins.y,64+irandom(1),false);
-				
-				draw_set_alpha(.4);
-				draw_circle(_ins.x,_ins.y,96+irandom(1),false);
-				
-		}
-	}	
-	if(instance_exists(obj_bullet)){
-		var _num=instance_number(obj_bullet);
-		for(var i=0;i<_num;i++){
-			var _ins=instance_find(obj_bullet,i);
-			
-				draw_set_alpha(.8);
-				draw_circle(_ins.x,_ins.y,64+irandom(1),false);
-				
-				draw_set_alpha(.4);
-				draw_circle(_ins.x,_ins.y,96+irandom(1),false);
-				
-		}
-	}	
+	scr_luz(obj_luz);
+	scr_luz(obj_ojo_disparo);
+	scr_luz(obj_fantasma_ataque);
+	scr_luz(obj_bulletRandom);
+	scr_luz(obj_bullet);
+	scr_luz(obj_circulos_360);
+	scr_luz(obj_circulos_random);
 	
 
-	
 	draw_set_alpha(.9);
 	gpu_set_blendmode(bm_normal);
 	draw_set_alpha(1);

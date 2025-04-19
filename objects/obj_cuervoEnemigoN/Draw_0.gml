@@ -5,33 +5,18 @@
 draw_self();
 
 
-// Obtener la posición del jugador
-var x_player = x;
-var y_player = y;
+var bar_w = 32;
+var bar_h = 2;
+var bar_offset_y = 32; // altura vertical de la barra, ajusta según necesidad
 
-// Definir la longitud de las líneas
-var line_length = 64;
+var bar_x1 = x - bar_w / 2;
+var bar_y1 = y - bar_offset_y;
+var bar_x2 = bar_x1 + bar_w;
+var bar_y2 = bar_y1 + bar_h;
 
-// Calcular posiciones basadas en image_angle
-var x_right = x_player + lengthdir_x(line_length, image_angle);
-var y_right = y_player + lengthdir_y(line_length, image_angle);
-
-var x_left = x_player + lengthdir_x(line_length, image_angle + 180);
-var y_left = y_player + lengthdir_y(line_length, image_angle + 180);
-
-// Dibujar las líneas
-draw_set_color(c_red);
-draw_line(x_player, y_player, x_right, y_right); // Línea derecha
-
-draw_set_color(c_blue);
-draw_line(x_player, y_player, x_left, y_left);   // Línea izquierda
+scr_BarraVida(bar_x1, bar_y1, bar_x2, bar_y2, vida, vida_max);
 
 
-
-//draw_circle(x,y,24,true);
-
-//draw_circle(x,y,64,true);
-//draw_circle(x,y,96,true);
 
 
 

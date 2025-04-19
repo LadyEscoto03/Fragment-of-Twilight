@@ -10,3 +10,12 @@ vsp=0;
 estado="";
 aparecio=false;
 caminar=false;
+
+vida=100;
+vida_max=100;
+
+
+puede_recibir_danio = true;
+danio_cooldown = 0;
+
+atacando=false;
