@@ -1,6 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(instance_exists(obj_player_noche)){
+	if (place_meeting(x, y, obj_player_noche) && obj_player_noche.estado == "ataque_espada1") {
+		if (floor(obj_player_noche.image_index) == 2 or floor(obj_player_noche.image_index) == 6) {
+			estado="muerte";
+		}
+	}
+	if(place_meeting(x,y,obj_cuervoNoche)){
+		estado="muerte";
+	}
+	
+
+}
+
+
+
 if(collision_circle(x,y,196,obj_player_noche,false,false)){
 	if(tempAtaque--<=0){
 		estado="ataque";

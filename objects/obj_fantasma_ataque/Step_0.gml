@@ -8,3 +8,4 @@ image_angle=direction;
 if(place_meeting(x,y,obj_paredInvisible)){
 	instance_destroy();
 }
+scr_espadaAtaque();

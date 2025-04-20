@@ -4,19 +4,48 @@ var _derecha = keyboard_check(vk_right);
 var _izquierda = keyboard_check(vk_left);
 var _jum = keyboard_check(vk_space);
 var _ataqueEspada1 = keyboard_check(vk_down);
-var _ataqueEspada2 = keyboard_check(vk_up);
 var _ataqueCuervo1 = keyboard_check(ord("W"));
 var _ataqueCuervo2 = keyboard_check(ord("D"));
 
 estado = "";
 
 
+
+if(!instance_exists(obj_jefe_noche)){
+	room_goto_next();
+}
+if(instance_exists(obj_esqueleto)){
+	if(place_meeting(x,y,obj_esqueleto)){
+		if(temDanio--<=0){
+			vida-=10;
+			temDanio=60;
+		}
+	}
+}
+if(instance_exists(obj_cuervoEnemigoN)){
+	if(place_meeting(x,y,obj_cuervoEnemigoN)){
+		if(temCuervoDanio--<=0){
+			vida-=10;
+			temCuervoDanio=60;
+		}
+	}
+}
+if(instance_exists(obj_jefe_noche)){
+	if(place_meeting(x,y,obj_jefe_noche)){
+		if(temJefeAtaque--<=0){
+			vida-=10;
+			temJefeAtaque=60;
+		}
+	}
+}
+
+
+
+
 if (_ataqueCuervo1) {
     estado = "ataque_cuervo1";
 } else if (_ataqueEspada1) {
     estado = "ataque_espada1";
-} else if (_ataqueEspada2) {
-    estado = "ataque_espada2";
 } else if (_ataqueCuervo2) {
     estado = "ataque_cuervo2";
 } else if (_jum) {
@@ -33,11 +62,6 @@ switch (estado) {
     case "ataque_espada1":
         sprite_index = spr_jugador_ataque1;
         break;
-    
-    case "ataque_espada2":
-        sprite_index = spr_jugador_ataque2;
-        break;
-    
     case "ataque_cuervo1":
 	
         sprite_index = spr_jugador_ataqueCuervo;
@@ -95,7 +119,7 @@ switch (estado) {
         break;
 }
 
-if not (_ataqueEspada1 or _ataqueEspada2 or _ataqueCuervo1 or _ataqueCuervo2){
+if not (_ataqueEspada1 or _ataqueCuervo1 or _ataqueCuervo2){
 	
 if(_derecha){
 	face=0;

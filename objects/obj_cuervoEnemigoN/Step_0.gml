@@ -1,9 +1,23 @@
-
 /// @description Insert description here
 // You can write your code in this editor
 
+
+
+
+
+
 //aplicar el movimiento seguiendo al player
 if(instance_exists(obj_player_noche)){
+
+	if((place_meeting(x,y,obj_player_noche) and  obj_player_noche.estado="ataque_espada1")and danio--<=0){
+		vida-=15;
+		danio=50;
+	}
+	if(vida<=0){
+		instance_destroy();
+	}
+	
+	
 	
 	//linea derecha 
 	if(collision_line(x,y,x+lengthdir_x(64, image_angle),y + lengthdir_y(64, image_angle),obj_player_noche,false,false)){
@@ -117,7 +131,7 @@ if (place_free(x, y + 1)){
 }
 
 
-if(collision_circle(x,y,16,obj_player_noche,false,false)){
+if(collision_circle(x,y,10,obj_player_noche,false,false)){
 	
 	if(animacion==true){
 		

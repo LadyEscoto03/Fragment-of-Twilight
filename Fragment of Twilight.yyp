@@ -155,6 +155,8 @@
     {"id":{"name":"rm_nivel2","path":"rooms/rm_nivel2/rm_nivel2.yy",},},
     {"id":{"name":"rm_nivel3","path":"rooms/rm_nivel3/rm_nivel3.yy",},},
     {"id":{"name":"scr_BarraVida","path":"scripts/scr_BarraVida/scr_BarraVida.yy",},},
+    {"id":{"name":"scr_espadaAtaque","path":"scripts/scr_espadaAtaque/scr_espadaAtaque.yy",},},
+    {"id":{"name":"scr_luz","path":"scripts/scr_luz/scr_luz.yy",},},
     {"id":{"name":"spr_agua","path":"sprites/spr_agua/spr_agua.yy",},},
     {"id":{"name":"spr_animacionHechizo","path":"sprites/spr_animacionHechizo/spr_animacionHechizo.yy",},},
     {"id":{"name":"spr_arboles","path":"sprites/spr_arboles/spr_arboles.yy",},},

@@ -3,6 +3,17 @@
 
 if(!instance_exists(obj_InicioJefe)){
 	
+	
+	if((place_meeting(x,y,obj_player_noche) and  obj_player_noche.estado="ataque_espada1")and danio--<=0){
+		vida-=10;
+		danio=50;
+	}
+	if(vida<=0){
+		estado="muerte";
+	}
+	
+	
+	
 if(estado=="hechizo"){
     tiempo_hechizo--; 
     if(tiempo_hechizo<=0){
@@ -69,12 +80,18 @@ switch (estado) {
 	}
 	
 	if(image_index>=image_number-1){
-		enEspada=100;
+		enEspada=60;
 		estado="espera";
+		image_index=0;
 	}
 	break;
 	case "espera":
 	sprite_index=spr_jefe_noche_idle;
+	break;
+	
+	case "muerte":
+	sprite_index=spr_jefe_noche_muerte;
+	
 	break;
 }
 
@@ -88,8 +105,6 @@ if (estado != "hechizo") {
     hsp = 0; // Se queda quieto mientras lanza el hechizo
 }
 
-
-
 vsp+=grv;
 
 if(place_meeting(x+hsp,y,obj_paredInvisible)){
@@ -98,7 +113,7 @@ if(place_meeting(x+hsp,y,obj_paredInvisible)){
     }
     hsp=0;
 }
-if (collision_circle(x, y, 32, obj_player_noche, false, false)) {
+if (collision_circle(x, y, 24, obj_player_noche, false, false)) {
     var angulo = point_direction(x, y, obj_player_noche.x, obj_player_noche.y) + 180;
     x+=lengthdir_x(1, angulo);
 }else{
