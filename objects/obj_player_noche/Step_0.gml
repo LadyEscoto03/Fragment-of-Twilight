@@ -10,6 +10,10 @@ var _ataqueCuervo2 = keyboard_check(ord("D"));
 estado = "";
 
 
+
+if(!instance_exists(obj_jefe_noche)){
+	room_goto_next();
+}
 if(instance_exists(obj_esqueleto)){
 	if(place_meeting(x,y,obj_esqueleto)){
 		if(temDanio--<=0){
@@ -23,6 +27,14 @@ if(instance_exists(obj_cuervoEnemigoN)){
 		if(temCuervoDanio--<=0){
 			vida-=10;
 			temCuervoDanio=60;
+		}
+	}
+}
+if(instance_exists(obj_jefe_noche)){
+	if(place_meeting(x,y,obj_jefe_noche)){
+		if(temJefeAtaque--<=0){
+			vida-=10;
+			temJefeAtaque=60;
 		}
 	}
 }

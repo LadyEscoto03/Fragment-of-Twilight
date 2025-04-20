@@ -12,3 +12,4 @@ vida_max=100;
 
 temDanio=60;
 temCuervoDanio=60;
+temJefeAtaque=60;

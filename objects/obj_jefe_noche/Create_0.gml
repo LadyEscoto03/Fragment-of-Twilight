@@ -13,8 +13,11 @@ tiempo_hechizo = 60; // Duración de la animación del hechizo
 ataque = false;
 estado = "caminar";
 
-enEspada=0;
+enEspada=60;
+vida=100;
+vida_max=100;
 
+danio=0;
 
 
 
