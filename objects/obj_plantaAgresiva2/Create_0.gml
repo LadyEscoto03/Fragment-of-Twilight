@@ -3,3 +3,4 @@
 
 estado="";
 ataqueIiro=0;
+objeto=noone;

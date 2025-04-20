@@ -19,3 +19,5 @@ puede_recibir_danio = true;
 danio_cooldown = 0;
 
 atacando=false;
+
+objeto=noone;

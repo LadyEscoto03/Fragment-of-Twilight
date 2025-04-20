@@ -14,3 +14,5 @@ seguir=false;
 
 vida=100;
 vida_max=100;
+
+objeto=noone;

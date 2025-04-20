@@ -1,25 +1,30 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-
-
-
-if (place_meeting(x, y, obj_player_noche) && obj_player_noche.estado == "ataque_espada1") {
-	if (floor(obj_player_noche.image_index) == 2 or floor(obj_player_noche.image_index) == 6) {
+if(instance_exists(obj_player_noche)){
+	objeto=obj_player_noche;
+	if (place_meeting(x, y, obj_player_noche) && obj_player_noche.estado == "ataque_espada1") {
+		if (floor(obj_player_noche.image_index) == 2 or floor(obj_player_noche.image_index) == 6) {
+			estado="muerte";
+		}
+	} else if (place_meeting(x, y, obj_cuervoNoche)){
 		estado="muerte";
-	}
-} else if (place_meeting(x, y, obj_cuervoNoche)){
+	} 
+
+}else if (instance_exists(obj_player)){
+	objeto=obj_player;
 	
+}
+
+if(estado=="muerte"){
 	estado="muerte";
-	
-} else if(collision_circle(x,y,132,obj_player_noche,false,false)){
+}else if(collision_circle(x,y,132,objeto,false,false)){
 	if(tempAtaque--<=0){
 		estado="ataque";
 	}
-	var dist=point_distance(x,y,obj_player_noche.x,obj_player_noche.y);
+	var dist=point_distance(x,y,objeto.x,objeto.y);
 	if(dist>=96){
-		motion_set(point_direction(x, y, obj_player_noche.x, obj_player_noche.y),movespeed);
+		motion_set(point_direction(x, y, objeto.x, objeto.y),movespeed);
 		friction=0;
 	}
 	seguir=false;

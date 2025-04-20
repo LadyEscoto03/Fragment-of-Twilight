@@ -13,3 +13,5 @@ atacando=false;
 seguir=false;
 
 cambioDireccion=60;
+
+objeto=noone;

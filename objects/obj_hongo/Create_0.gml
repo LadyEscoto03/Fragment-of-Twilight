@@ -17,7 +17,9 @@ estadoAtaque=0;
 
 vida=100;
 vida_max=100;
-danio=false;
+danio=0;
 danioEspada=false;
 
 ataqueC=0;
+
+objeto=noone;

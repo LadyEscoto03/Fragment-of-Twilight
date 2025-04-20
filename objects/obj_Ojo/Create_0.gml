@@ -13,4 +13,4 @@ vida=100;
 vida_max=100;
 danio=false;
 
-global.ataqueOjo=false;
+objeto=noone;

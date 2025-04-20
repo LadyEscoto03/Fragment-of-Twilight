@@ -1,9 +1,25 @@
 /// @description Insert description here
 // You can write your code in this editor
-// Detectar si el jugador está en rango
-var enRangoLargo = collision_circle(x, y, 182, obj_player, false, false);
 
 
+if(instance_exists(obj_player_noche)){
+	objeto=obj_player_noche;
+	if((place_meeting(x,y,obj_player_noche) and  obj_player_noche.estado="ataque_espada1")and danio--<=0){
+		vida-=15;
+		danio=50;
+	}
+}else if(instance_exists(obj_player)){
+	objeto=obj_player;
+}
+
+
+var enRangoLargo = collision_circle(x, y, 182, objeto, false, false);
+
+if(collision_circle(x, y, 32, objeto, false, false)){
+	movespeed=0;
+}else {
+	movespeed=1;
+}
  if (enRangoLargo && estado == "correr" && temporizador-- <= 0) {
     estado = "ataqueLargaDistancia";
     temporizador = 60;
@@ -13,7 +29,7 @@ var enRangoLargo = collision_circle(x, y, 182, obj_player, false, false);
 switch (estado) {
     case "correr":
         sprite_index = spr_hongo_correr;
-        hsp = (enRangoLargo) ? lengthdir_x(movespeed, point_direction(x, y, obj_player.x, obj_player.y)) : dir * movespeed;
+        hsp = (enRangoLargo) ? lengthdir_x(movespeed, point_direction(x, y, objeto.x, objeto.y)) : dir * movespeed;
 
         if (place_meeting(x + hsp, y, obj_paredInvisible)) {
             dir *= -1;
@@ -47,11 +63,7 @@ switch (estado) {
         }
         break;
 		
-		case "danio":
-		if (image_index >= image_number - 1) {
-           estado="";
-        }
-		break;
+
 		case "muerte":
 		sprite_index = spr_hongo_muerte;
 		 if (image_index >= image_number - 1) {
@@ -63,12 +75,6 @@ switch (estado) {
         estado = "correr";
         temporizador = 60;
         break;
-}
-
-
-if(place_meeting(x,y,obj_cuervoDestrucion)){
-	estado="danio";
-	
 }
 
 
@@ -99,26 +105,6 @@ if (hsp != 0) {
     image_xscale = sign(hsp);
 }
 
-
-
-
-if(place_meeting(x,y,obj_cuervoDestrucion)){
-	if(danio==false){
-		vida-=10;
-		danio=true;
-	}
-	
-}else{
-	danio=false;
-}
-if(obj_player.estado=="attack") and place_meeting(x,y,obj_player){
-	if(danioEspada==false){
-		vida-=15;
-		danioEspada=true;
-	}
-}else{
-	danioEspada=false;
-}
 
 
 

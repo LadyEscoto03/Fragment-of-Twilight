@@ -2,17 +2,20 @@
 // You can write your code in this editor
 
 
-
-
-
-
-//aplicar el movimiento seguiendo al player
 if(instance_exists(obj_player_noche)){
-
+	objeto=obj_player_noche;
 	if((place_meeting(x,y,obj_player_noche) and  obj_player_noche.estado="ataque_espada1")and danio--<=0){
 		vida-=15;
 		danio=50;
 	}
+}else if (instance_exists(obj_player)){
+	objeto=obj_player;
+}
+
+//aplicar el movimiento seguiendo al player
+
+
+	
 	if(vida<=0){
 		instance_destroy();
 	}
@@ -20,28 +23,28 @@ if(instance_exists(obj_player_noche)){
 	
 	
 	//linea derecha 
-	if(collision_line(x,y,x+lengthdir_x(64, image_angle),y + lengthdir_y(64, image_angle),obj_player_noche,false,false)){
+	if(collision_line(x,y,x+lengthdir_x(64, image_angle),y + lengthdir_y(64, image_angle),objeto,false,false)){
 		//show_message("derecha");
 		seguirPlayer=true;
-	} else if(collision_line(x,y,x+lengthdir_x(64, image_angle+180),y + lengthdir_y(64, image_angle+180),obj_player_noche,false,false)){
+	} else if(collision_line(x,y,x+lengthdir_x(64, image_angle+180),y + lengthdir_y(64, image_angle+180),objeto,false,false)){
 		seguirPlayer=true;
 	}
 	if(seguirPlayer==true){
 		if(moverAbajoPared==false){
 			
-			if(obj_player_noche.x>x){
+			if(objeto.x>x){
 				move_x=vel;//derecha
 				image_xscale=1;
-			}else if(obj_player_noche.x<x){
+			}else if(objeto.x<x){
 				move_x=-vel;//izquierda
 				image_xscale=-1;
-			} else if(obj_player_noche.x==x){
+			} else if(objeto.x==x){
 				move_x=0;
 			}
 		}
 	}
 
-}
+
 
 if(seguirPlayer==false){
 	move_x=dir*vel;
@@ -70,11 +73,11 @@ if(seguirPlayer==false){
 	image_angle=180;
 	grav = 0;
 
-	if (obj_player_noche.x > x and place_free(x - 1, y)) {
+	if (objeto.x > x and place_free(x - 1, y)) {
 	    move_x = -vel; //izquierda
 		esquina=true;
 
-	} else if(obj_player_noche.x < x ){
+	} else if(objeto.x < x ){
 	    move_x = vel;//derecha
 		esquina=true;
 	}
@@ -131,7 +134,7 @@ if (place_free(x, y + 1)){
 }
 
 
-if(collision_circle(x,y,10,obj_player_noche,false,false)){
+if(collision_circle(x,y,10,objeto,false,false)){
 	
 	if(animacion==true){
 		
@@ -152,7 +155,7 @@ if(collision_circle(x,y,10,obj_player_noche,false,false)){
 }
 
 //área para teletransportar
-if (!collision_circle(x, y, 164, obj_player_noche, false, false) and seguirPlayer==true) {
+if (!collision_circle(x, y, 164, objeto, false, false) and seguirPlayer==true) {
     if (timerTs-- <= 0) {
 		move_x=0;
 		estado="teletransportacion";   
@@ -164,7 +167,7 @@ if (!collision_circle(x, y, 164, obj_player_noche, false, false) and seguirPlaye
 if (teletrasportacion == true) {
 
     if (!instance_exists(obj_ts_control)) {
-        instance_create_layer(obj_player_noche.x, obj_player_noche.y, "Instances", obj_ts_control);
+        instance_create_layer(objeto.x, objeto.y, "Instances", obj_ts_control);
     }
     
     if (instance_exists(obj_teletransportador)) {

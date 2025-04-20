@@ -1,12 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(instance_exists(obj_player_noche)){
+	objeto=obj_player_noche;
+}else if (instance_exists(obj_player)){
+	objeto=obj_player;
+}
+
 estado="caminar";
-if(collision_circle(x,y,96,obj_player,false,false)){
+if(collision_circle(x,y,96,objeto,false,false)){
 	movespeed=2;
-	var anguloDireccion=point_direction(x,y,obj_player.x,obj_player.y);
+	var anguloDireccion=point_direction(x,y,objeto.x,objeto.y);
 	hsp=lengthdir_x(movespeed,anguloDireccion);
-	if(collision_circle(x,y,40,obj_player,false,false)){
+	if(collision_circle(x,y,40,objeto,false,false)){
 		estado="ataque";
 	}
 

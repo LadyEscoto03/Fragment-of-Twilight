@@ -1,8 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(instance_exists(obj_player_noche)){
+	objeto=obj_player_noche;
+	
+}else if(instance_exists(obj_player)){
+	objeto=obj_player;
+}
 
-if (collision_circle(x, y, 164, obj_player, false, false)) {
+
+if (collision_circle(x, y, 164, objeto, false, false)) {
     estado = "ataque";
 	
 } else {
