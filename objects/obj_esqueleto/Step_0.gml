@@ -1,14 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+if(instance_exists(obj_player)){
+	objeto=obj_player;
+}else if (instance_exists(obj_player_noche)){
+	objeto=obj_player_noche;
+}
+
 if(aparecio==false){
-	if(collision_circle(x,y,96,obj_player_noche,false,false)){
+	if(collision_circle(x,y,96,objeto,false,false)){
 		estado="aparecer";
 		aparecio=true;
 	}
 
 }
-if(collision_circle(x,y,16,obj_player_noche,false,false)){
+if(collision_circle(x,y,16,objeto,false,false)){
 	estado="ataque";
 	
 }
@@ -51,7 +58,7 @@ switch(estado){
 	case "ataque":
 	sprite_index=spr_esqueleto_ataque;
 	movespeed=0;
-	if not(collision_circle(x,y,32,obj_player_noche,false,false)){
+	if not(collision_circle(x,y,32,objeto,false,false)){
 		estado="caminar";
 	}
 	break;
@@ -77,7 +84,7 @@ break;
 	
 }
 if(caminar==true){
-	var anguloDireccion=point_direction(x,y,obj_player_noche.x,obj_player_noche.y);
+	var anguloDireccion=point_direction(x,y,objeto.x,objeto.y);
 	hsp=lengthdir_x(movespeed,anguloDireccion);
 	vsp+=grv;
 	if(place_meeting(x+hsp,y,obj_paredInvisible)){

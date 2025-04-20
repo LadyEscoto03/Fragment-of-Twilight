@@ -36,7 +36,7 @@ vida_max=100;
 
 danio=0;
 
-
+objeto=noone;
 
 
 
