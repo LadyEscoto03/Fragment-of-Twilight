@@ -1,12 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(!instance_exists(obj_cambioPlayer)){
+	
+	draw_set_color(c_black);
+	draw_set_alpha(alpha);
+	draw_rectangle(0, 0, room_width, room_height, false);
+}
 
-draw_self();
 
-draw_set_color(c_black);
-draw_set_alpha(alpha);
-draw_rectangle(0, 0, room_width, room_height, false);
+
 
 if (oscuro) {
     alpha += speed;  // Aumentamos la opacidad (oscurecer)
