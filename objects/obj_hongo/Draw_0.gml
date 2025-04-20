@@ -11,3 +11,4 @@ var bar_y2 = bar_y1 + bar_h;
 
 scr_BarraVida(bar_x1, bar_y1, bar_x2, bar_y2, vida, vida_max);
 
+

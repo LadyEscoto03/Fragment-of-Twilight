@@ -11,7 +11,12 @@ estado = "";
 
 
 
-if(!instance_exists(obj_jefe_noche)){
+if((room_get_name(room)=="rm_nivel3") and !instance_exists(obj_final) and final==false){
+	final=true;
+	instance_create_layer(x,y,"Instances",obj_finalNivel);
+}
+
+if((!instance_exists(obj_jefe_noche) and room_get_name(room)=="rm_nivel2")){
 	//room_goto_next();
 }
 if(instance_exists(obj_esqueleto)){
@@ -40,9 +45,9 @@ if(instance_exists(obj_jefe_noche)){
 }
 
 
-
-
-if (_ataqueCuervo1) {
+if(vida<=0){
+	estado="muerte";
+}else if (_ataqueCuervo1) {
     estado = "ataque_cuervo1";
 } else if (_ataqueEspada1) {
     estado = "ataque_espada1";
@@ -172,7 +177,8 @@ if(_jum and !place_free(x,y+1)){
 	grav -=16;
 }
 
-
-
-
-
+if(instance_exists(obj_finalNivel)){
+	if(instance_exists(obj_player)){
+		vida=0;
+	}
+}

@@ -6,8 +6,8 @@
   "name":"obj_final",
   "overriddenProperties":[],
   "parent":{
-    "name":"Paredes",
-    "path":"folders/Objects/Paredes.yy",
+    "name":"Final",
+    "path":"folders/Objects/Final.yy",
   },
   "parentObjectId":null,
   "persistent":false,

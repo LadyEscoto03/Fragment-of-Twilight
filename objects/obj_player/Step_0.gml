@@ -15,14 +15,24 @@ if(room_get_name(room)=="rm_nivel1"){
 }
 
 
-
-
-
-
-
-
-
-
+if(instance_exists(obj_cuervoEnemigoN)){
+	if(place_meeting(x,y,obj_cuervoEnemigoN)){
+		if(temCuervoDanio--<=0){
+			estado="Daño";
+			vida-=10;
+			temCuervoDanio=60;
+		}
+	}
+}
+if(instance_exists(obj_esqueleto)){
+	if(place_meeting(x,y,obj_esqueleto)){
+		if(temDanio--<=0){
+			vida-=10;
+			estado="Daño";
+			temDanio=60;
+		}
+	}
+}
 
 if(_derecha){
 	face=0;
@@ -73,12 +83,14 @@ if(_jum && !place_free(x,y+1)){
 
 
 
+if((room_get_name(room)=="rm_nivel3") and instance_exists(obj_finalNivel) and !instance_exists(obj_player_noche)){
+	vida=0;
+}
 
 
-
-
-
-if(_attack2){
+if(vida<=0){
+	estado="muerte";
+}else if(_attack2){
 	estado="ataque2";
 	}else{
 		if(_jum){
@@ -155,6 +167,11 @@ switch(estado){
 	
 		
 		break;
+		case "muerte":
+		sprite_index=spr_player_muerte2;
+
+		break;
+		
 	default:
 	     sprite_index=spr_player_idle;	
 		 break;
