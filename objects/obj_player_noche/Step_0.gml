@@ -12,7 +12,7 @@ estado = "";
 
 
 if(!instance_exists(obj_jefe_noche)){
-	room_goto_next();
+	//room_goto_next();
 }
 if(instance_exists(obj_esqueleto)){
 	if(place_meeting(x,y,obj_esqueleto)){

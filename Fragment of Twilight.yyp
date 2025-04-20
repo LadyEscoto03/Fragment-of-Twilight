@@ -126,6 +126,7 @@
     {"id":{"name":"obj_fantasma_ataque","path":"objects/obj_fantasma_ataque/obj_fantasma_ataque.yy",},},
     {"id":{"name":"obj_fantasma_tiro_destruccion","path":"objects/obj_fantasma_tiro_destruccion/obj_fantasma_tiro_destruccion.yy",},},
     {"id":{"name":"obj_fantasma","path":"objects/obj_fantasma/obj_fantasma.yy",},},
+    {"id":{"name":"obj_final","path":"objects/obj_final/obj_final.yy",},},
     {"id":{"name":"obj_gusano","path":"objects/obj_gusano/obj_gusano.yy",},},
     {"id":{"name":"obj_hongo","path":"objects/obj_hongo/obj_hongo.yy",},},
     {"id":{"name":"obj_inicioHechizo","path":"objects/obj_inicioHechizo/obj_inicioHechizo.yy",},},
@@ -265,9 +266,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_nivel3","path":"rooms/rm_nivel3/rm_nivel3.yy",},},
     {"roomId":{"name":"rm_nivel2","path":"rooms/rm_nivel2/rm_nivel2.yy",},},
     {"roomId":{"name":"rm_nivel1","path":"rooms/rm_nivel1/rm_nivel1.yy",},},
-    {"roomId":{"name":"rm_nivel3","path":"rooms/rm_nivel3/rm_nivel3.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

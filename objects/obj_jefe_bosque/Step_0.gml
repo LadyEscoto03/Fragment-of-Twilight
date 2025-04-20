@@ -3,7 +3,7 @@
 
 // Si el jefe ya está en ataque largo, dejar que termine la animación antes de cambiar de estado
 
-if(instance_exists(obj_InicioJefe)){
+if(!instance_exists(obj_InicioJefe)){
 	
 	
 	if(vida<=0){
