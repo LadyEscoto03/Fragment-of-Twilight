@@ -45,7 +45,7 @@ if(instance_exists(obj_jefe_noche)){
 }
 
 
-if(vida<=0){
+ if(vida<=0 ){
 	estado="muerte";
 }else if (_ataqueCuervo1) {
     estado = "ataque_cuervo1";
@@ -116,7 +116,11 @@ switch (estado) {
         break;
     
     case "muerte":
+	
         sprite_index = spr_jugador_muerte;
+		
+		
+		
         break;
     
     default:

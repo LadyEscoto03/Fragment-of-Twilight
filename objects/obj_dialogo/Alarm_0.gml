@@ -5,4 +5,6 @@ if(inicio<string_length(texto)){
 	texto2+=string_char_at(texto,inicio);
 	inicio+=1;
 	alarm[0]=3;
+}else {
+	alarm[1]=100;
 }

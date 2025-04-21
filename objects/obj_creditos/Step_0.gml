@@ -1,4 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-alarm[0]=60;
-
+if(smsFinal==true and creditosFinal==false){
+	alarm[0]=350;
+	creditosFinal=true;
+}
