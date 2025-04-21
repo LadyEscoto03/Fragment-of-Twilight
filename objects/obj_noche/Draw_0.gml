@@ -22,6 +22,17 @@ if(surface_exists(sombra_superficie)){
 	scr_luz(obj_bullet);
 	scr_luz(obj_circulos_360);
 	scr_luz(obj_circulos_random);
+	scr_luz(obj_agisFinal);
+	scr_luz(obj_vida);
+	scr_luz(obj_cuervoEnemigoDia);
+	scr_luz(obj_disparoHongo);
+	scr_luz(obj_hongo);
+	scr_luz(obj_semilla);
+	scr_luz(obj_cristal);
+	if(room_get_name(room)=="rm_nivel3"){
+		scr_luz(obj_player);
+		scr_luz(obj_player_noche);
+	}
 	
 
 	draw_set_alpha(.9);

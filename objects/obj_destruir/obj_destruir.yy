@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_InicioJefe",
-  "eventList":[],
+  "%Name":"obj_destruir",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_InicioJefe",
+  "name":"obj_destruir",
   "overriddenProperties":[],
   "parent":{
-    "name":"Paredes",
-    "path":"folders/Objects/Paredes.yy",
+    "name":"Final",
+    "path":"folders/Objects/Final.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_paredInvisible",
-    "path":"sprites/spr_paredInvisible/spr_paredInvisible.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

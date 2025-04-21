@@ -92,15 +92,15 @@ if(vida<=0){
 	estado="muerte";
 }else if(_attack2){
 	estado="ataque2";
-	}else{
-		if(_jum){
+	}else if(_jum){
 			estado="jump";
-		}else{
-			if(_derecha or _izquierda){
+		}else if(_derecha or _izquierda){
 				estado="walk";
+			}else if(estado=="Daño"){
+				estado="Daño";
 			}
-		}
-	}
+		
+	
 
 
 if(place_meeting(x,y,obj_agua)){
