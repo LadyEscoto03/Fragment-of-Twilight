@@ -10,7 +10,7 @@ var x1=gui_largo/2;
 var y1=gui_alto/2;
 //dibuja el título
 draw_text(display_get_width()/2.8,148,"GAME OVER");
-draw_text(display_get_width()/2.8,300,string("Puntaje:  ")+string(score));
+draw_text(display_get_width()/2.8,300,string("Puntaje:  ")+string(obj_puntos.puntos));
 //despliega y escribe las opciones
 for(var i=0;i<op_max;i++){
 	draw_set_halign(fa_center);

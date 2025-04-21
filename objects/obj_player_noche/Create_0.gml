@@ -7,8 +7,8 @@ estado="";
 temAtaque1=0;
 temAtaque2=0;
 
-vida=100;
-vida_max=100;
+vida=200;
+vida_max=200;
 
 temDanio=60;
 temCuervoDanio=60;
