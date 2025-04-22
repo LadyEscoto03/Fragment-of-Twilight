@@ -10,4 +10,4 @@ var bar_y1 = y - sprite_height / 2 - 8;
 var bar_x2 = bar_x1 + bar_w;
 var bar_y2 = bar_y1 + bar_h;
 
-scr_BarraVida(bar_x1, bar_y1, bar_x2, bar_y2, vida, vida_max);
+scr_BarraVida(bar_x1, bar_y1, bar_x2, bar_y2,  obj_vidaJugador.vida,  obj_vidaJugador.vida_max);

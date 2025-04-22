@@ -19,7 +19,7 @@ ataqueCorto=false;
 
 rm=false;
 timerH=150;
-
+global.ataqueJ=false;
 
 
 

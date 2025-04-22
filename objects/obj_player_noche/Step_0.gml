@@ -23,7 +23,7 @@ if((!instance_exists(obj_jefe_noche) and room_get_name(room)=="rm_nivel2")and rm
 if(instance_exists(obj_esqueleto)){
 	if(place_meeting(x,y,obj_esqueleto)){
 		if(temDanio--<=0){
-			vida-=10;
+			obj_vidaJugador.vida-=10;
 			temDanio=60;
 		}
 	}
@@ -31,7 +31,7 @@ if(instance_exists(obj_esqueleto)){
 if(instance_exists(obj_cuervoEnemigoN)){
 	if(place_meeting(x,y,obj_cuervoEnemigoN)){
 		if(temCuervoDanio--<=0){
-			vida-=10;
+			obj_vidaJugador.vida-=10;
 			temCuervoDanio=60;
 		}
 	}
@@ -39,14 +39,14 @@ if(instance_exists(obj_cuervoEnemigoN)){
 if(instance_exists(obj_jefe_noche)){
 	if(place_meeting(x,y,obj_jefe_noche)){
 		if(temJefeAtaque--<=0){
-			vida-=10;
+			obj_vidaJugador.vida-=10;
 			temJefeAtaque=60;
 		}
 	}
 }
 
 
- if(vida<=0 ){
+ if(obj_vidaJugador.vida<=0 ){
 	estado="muerte";
 }else if (_ataqueCuervo1) {
     estado = "ataque_cuervo1";
@@ -184,6 +184,6 @@ if(_jum and !place_free(x,y+1)){
 
 if(instance_exists(obj_finalNivel)){
 	if(instance_exists(obj_player)){
-		vida=0;
+		obj_vidaJugador.vida=0;
 	}
 }

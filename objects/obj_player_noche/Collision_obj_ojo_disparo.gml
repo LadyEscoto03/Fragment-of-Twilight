@@ -11,6 +11,6 @@ if(image_xscale == 1 && obj_ojo_disparo.x > x){
 }
 
 if(!(estado == "ataque_espada1" && de_frente)){
-    vida -= 10;
+     obj_vidaJugador.vida -= 10;
     instance_destroy(obj_ojo_disparo);
 }

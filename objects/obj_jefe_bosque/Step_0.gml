@@ -23,17 +23,15 @@ if(!instance_exists(obj_InicioJefe)){
         ataque = false;
         temporizadorAtaqueLargo = 450;
     } 
-    else if (collision_circle(x, y, 90, obj_player, false, false) and temCorto--<=0) {
+    else if (collision_circle(x, y, 60, obj_player, false, false) and temCorto--<=0) {
         estado = "ataqueCorto";
 		
 		
-    } 
-   
-    else if (estado != "ataqueLargo" && estado != "caminar") {
+		
+    } else if (estado != "ataqueLargo" && estado != "caminar") {
         estado = "ataqueCorto";
     }
 }
-
 
 
 // Manejo de estados
@@ -68,7 +66,12 @@ switch (estado) {
 	if (sprite_index != spr_jefe_ataque) {
             sprite_index = spr_jefe_ataque;
             image_index = 0;
+			
         }
+		if(estado=="ataqueCorto" and floor(image_index)==5){
+			global.ataqueJ=true;
+		}
+		
 		 if (image_index >= image_number - 1) {
 			  image_index = 0;
 			  temCorto=100;

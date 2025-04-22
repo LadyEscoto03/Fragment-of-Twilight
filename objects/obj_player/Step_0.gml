@@ -9,7 +9,7 @@ var _attack2=keyboard_check_pressed(vk_up);
 
 //paso de niveles
 if(room_get_name(room)=="rm_nivel1"){
-	if(vida>0 and !instance_exists(obj_jefe_bosque) and rm==false){
+	if( obj_vidaJugador.vida>0 and !instance_exists(obj_jefe_bosque) and rm==false){
 		rm=true;
 		alarm[1]=96;
 	}
@@ -20,7 +20,7 @@ if(instance_exists(obj_cuervoEnemigoN)){
 	if(place_meeting(x,y,obj_cuervoEnemigoN)){
 		if(temCuervoDanio--<=0){
 			estado="Daño";
-			vida-=10;
+			 obj_vidaJugador.vida-=10;
 			temCuervoDanio=60;
 		}
 	}
@@ -28,12 +28,24 @@ if(instance_exists(obj_cuervoEnemigoN)){
 if(instance_exists(obj_esqueleto)){
 	if(place_meeting(x,y,obj_esqueleto)){
 		if(temDanio--<=0){
-			vida-=10;
+			 obj_vidaJugador.vida-=10;
 			estado="Daño";
 			temDanio=60;
 		}
 	}
 }
+
+
+if(instance_exists(obj_jefe_bosque)){
+	
+		if(global.ataqueJ==true){
+			global.ataqueJ=false;
+			estado="Daño";
+		}
+		
+	
+}
+
 
 if(_derecha){
 	face=0;
@@ -85,11 +97,11 @@ if(_jum && !place_free(x,y+1)){
 
 
 if((room_get_name(room)=="rm_nivel3") and instance_exists(obj_finalNivel) and !instance_exists(obj_player_noche)){
-	vida=0;
+	 obj_vidaJugador.vida=0;
 }
 
 
-if(vida<=0){
+if(obj_vidaJugador.vida<=0){
 	estado="muerte";
 }else if(_attack2){
 	estado="ataque2";
@@ -138,7 +150,7 @@ switch(estado){
 		case "Daño":
 		sprite_index = spr_player_danio;
 		if (!danio && floor(image_index) == 1) {
-			vida -= 10;
+			 obj_vidaJugador.vida -= 15;
 			danio = true;
 		}
 		if (image_index >= image_number - 1) {

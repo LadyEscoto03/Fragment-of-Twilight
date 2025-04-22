@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+draw_set_font(fnt_letra);
 draw_set_color(c_white);//color de letra
 var dist=55;//distancia entre las opciones
 var gui_largo=display_get_gui_width();
