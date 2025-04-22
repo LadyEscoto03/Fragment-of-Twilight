@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fnt_letra",
+  "%Name":"fnt_letra_pantallas",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":27,
@@ -343,7 +343,7 @@
   "last":0,
   "lineHeight":34,
   "maintainGms1Font":false,
-  "name":"fnt_letra",
+  "name":"fnt_letra_pantallas",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",

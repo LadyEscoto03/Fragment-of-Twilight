@@ -3,14 +3,14 @@
 if(keyboard_check_pressed(vk_enter)){
 	//opcion volver al menú
 	if(index==1){
-		//room_goto(rm_menu);
+		room_goto(rm_menu);
 	}
 	//opcion volver a jugar 
 	if(index==0){
 		room_goto(rm_nivel1);
 	}
 	if(index==2){
-		//room_goto(rm_creditos);
+		room_goto(rm_creditos);
 	}
 }
 //sube la posición de las opciones 

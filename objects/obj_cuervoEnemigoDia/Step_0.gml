@@ -12,7 +12,7 @@ if(collision_circle(x,y,96,objeto,false,false)){
 	movespeed=2;
 	var anguloDireccion=point_direction(x,y,objeto.x,objeto.y);
 	hsp=lengthdir_x(movespeed,anguloDireccion);
-	if(collision_circle(x,y,40,objeto,false,false)){
+	if(collision_circle(x,y,30,objeto,false,false)){
 		estado="ataque";
 	}
 

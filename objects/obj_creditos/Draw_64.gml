@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_set_font(fnt_letra);
+draw_set_font(fnt_letra_pantallas);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 //dibujar el área en donde irán los créditos,rectangulo
