@@ -17,7 +17,7 @@ temporizadorAtaqueLargo=0;
 
 ataqueCorto=false;
 
-
+rm=false;
 timerH=150;
 
 

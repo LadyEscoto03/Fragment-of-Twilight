@@ -13,3 +13,4 @@ vida_max=200;
 danio=false;
 temCuervoDanio=60;
 temDanio=60;
+rm=false;

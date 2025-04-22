@@ -14,3 +14,4 @@ temDanio=60;
 temCuervoDanio=60;
 temJefeAtaque=60;
 final=false;
+rm2=false;

@@ -16,8 +16,9 @@ if((room_get_name(room)=="rm_nivel3") and !instance_exists(obj_final) and final=
 	instance_create_layer(x,y,"Instances",obj_finalNivel);
 }
 
-if((!instance_exists(obj_jefe_noche) and room_get_name(room)=="rm_nivel2")){
-	//room_goto_next();
+if((!instance_exists(obj_jefe_noche) and room_get_name(room)=="rm_nivel2")and rm2==false){
+	rm2=true;
+	alarm[2]=96;
 }
 if(instance_exists(obj_esqueleto)){
 	if(place_meeting(x,y,obj_esqueleto)){

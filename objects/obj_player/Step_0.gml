@@ -9,8 +9,9 @@ var _attack2=keyboard_check_pressed(vk_up);
 
 //paso de niveles
 if(room_get_name(room)=="rm_nivel1"){
-	if(vida>0 and !instance_exists(obj_jefe_bosque)){
-		room_goto(rm_nivel2);
+	if(vida>0 and !instance_exists(obj_jefe_bosque) and rm==false){
+		rm=true;
+		alarm[1]=96;
 	}
 }
 
@@ -110,8 +111,6 @@ if(place_meeting(x,y,obj_agua)){
 }
 
 if(place_meeting(x,y,obj_plantaAgresiva)){
-	estado="Daño";
-}else if(place_meeting(x,y,obj_hongo)){
 	estado="Daño";
 }else if(place_meeting(x,y,obj_cuervoEnemigoDia)){
 	if(obj_cuervoEnemigoDia.estado=="ataque"){
