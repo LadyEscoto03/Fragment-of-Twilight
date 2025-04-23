@@ -48,7 +48,8 @@ if(instance_exists(obj_jefe_noche)){
 
  if(obj_vidaJugador.vida<=0 ){
 	estado="muerte";
-}else if (_ataqueCuervo1) {
+}else
+if (_ataqueCuervo1) {
     estado = "ataque_cuervo1";
 } else if (_ataqueEspada1) {
     estado = "ataque_espada1";
