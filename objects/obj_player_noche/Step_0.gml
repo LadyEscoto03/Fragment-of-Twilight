@@ -4,8 +4,8 @@ var _derecha = keyboard_check(vk_right);
 var _izquierda = keyboard_check(vk_left);
 var _jum = keyboard_check(vk_space);
 var _ataqueEspada1 = keyboard_check(vk_down);
-var _ataqueCuervo1 = keyboard_check(ord("W"));
-var _ataqueCuervo2 = keyboard_check(ord("D"));
+var _ataqueCuervo1 = keyboard_check(vk_up);
+var _ataqueCuervo2 = keyboard_check(ord("W"));
 
 estado = "";
 

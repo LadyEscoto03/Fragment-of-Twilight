@@ -2,8 +2,12 @@
 // You can write your code in this editor
 if(keyboard_check_pressed(vk_enter)){
 	//opcion salir
-	if(index==1){
+	if(index==2){
 		game_end();
+	}
+	//opcion tutorial
+	if(index==1){
+		room_goto(rm_tutorial);
 	}
 	//opcion iniciar juego
 	if(index==0){

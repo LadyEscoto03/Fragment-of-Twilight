@@ -3,5 +3,5 @@
 draw_set_font(fnt_letraAgis);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text_transformed(obj_agisFinal.x, obj_agisFinal.y -52, texto2, 0.5, 0.5, 0);
+draw_text_transformed(obj_agisFinal.x, obj_agisFinal.y-56, texto2, 0.5, 0.5, 0);
 draw_set_font(-1);
