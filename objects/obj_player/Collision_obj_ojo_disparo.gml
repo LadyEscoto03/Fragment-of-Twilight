@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-vida-=15;
+ obj_vidaJugador.vida-=15;
 instance_destroy(obj_ojo_disparo.id);

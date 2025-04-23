@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 pared=false;
-movespeed=0.1;
+movespeed=0.6;
 
 
 estado="";

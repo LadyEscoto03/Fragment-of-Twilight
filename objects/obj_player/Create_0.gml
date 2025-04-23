@@ -7,9 +7,9 @@ face=0;
 estado="";
 cuervoTiro=0;
 
-vida=100;
-vida_max=100;
 
 danio=false;
 temCuervoDanio=60;
 temDanio=60;
+rm=false;
+danioJefe=0;

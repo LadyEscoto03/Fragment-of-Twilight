@@ -1,0 +1,6 @@
+/// @description Insert description here
+// You can write your code in this editor
+smsFinal=false;
+creditosFinal=false;
+creditos_inicio=display_get_height();
+creditos_texto=["Continuará...","","","","","","","","------------------------------Creadora------------------------------","Lady Isabel Escoto Castillo", "------------------------------Recursos utilizados desde Itch.io ------------------------------","Tileset nivel 2 por Pixramen","Tileset nivel 1 por Atari Boy","Tilest nivel 3 por Maaot","Luciérnagas por Maaot","Background nivel 2 y 3 por Edermunizz","Background nivel 1 por Ansimuz","Teclas del tutorial por Dream Mix","Cuervo enemigo nocturno por Cptfoorman","Esqueleto por Eddie's Workshop","Cuervo enemigo día por Szadi art","Plantas y semillas de ataque por Ponk","Lombriz de tierra por Ponk","Fragmentos de cristales por Pekschi","Bullets y hechizos por BDragon1727","Boss nocturno por Clembod","Hongo por LuizMelo","Cuervo del menú por Smithygames","Alma(Fantasma)y proyectil enemigo por Eddies-Workshop","Ojo y proyectil enemigo por 98Pixel","Boss de día por Burrito","Agis por Papoy Core","Player día por Gabry Corti","Player de noche por Gabry Corti","Item de vida por MiguelNero","Música para recolectar item por Jesús Lastra"];//texto de los créditos

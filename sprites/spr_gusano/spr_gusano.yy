@@ -178,7 +178,7 @@
   "origin":4,
   "parent":{
     "name":"Gusano",
-    "path":"folders/Sprites/enemigos-naturales/plantaAgresiva/Gusano.yy",
+    "path":"folders/Sprites/enemigos-naturales/Gusano.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

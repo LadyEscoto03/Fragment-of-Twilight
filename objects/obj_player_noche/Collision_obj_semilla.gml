@@ -9,6 +9,6 @@ if(image_xscale == 1 && obj_semilla.x > x){
 }
 
 if(!(estado == "ataque_espada1" && frente)){
-    vida -= 10;
+     obj_vidaJugador.vida -= 10;
     instance_destroy(obj_semilla);
 }

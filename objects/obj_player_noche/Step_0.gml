@@ -4,8 +4,8 @@ var _derecha = keyboard_check(vk_right);
 var _izquierda = keyboard_check(vk_left);
 var _jum = keyboard_check(vk_space);
 var _ataqueEspada1 = keyboard_check(vk_down);
-var _ataqueCuervo1 = keyboard_check(ord("W"));
-var _ataqueCuervo2 = keyboard_check(ord("D"));
+var _ataqueCuervo1 = keyboard_check(vk_up);
+var _ataqueCuervo2 = keyboard_check(ord("W"));
 
 estado = "";
 
@@ -16,13 +16,14 @@ if((room_get_name(room)=="rm_nivel3") and !instance_exists(obj_final) and final=
 	instance_create_layer(x,y,"Instances",obj_finalNivel);
 }
 
-if((!instance_exists(obj_jefe_noche) and room_get_name(room)=="rm_nivel2")){
-	//room_goto_next();
+if((!instance_exists(obj_jefe_noche) and room_get_name(room)=="rm_nivel2")and rm2==false){
+	rm2=true;
+	alarm[2]=96;
 }
 if(instance_exists(obj_esqueleto)){
 	if(place_meeting(x,y,obj_esqueleto)){
 		if(temDanio--<=0){
-			vida-=10;
+			obj_vidaJugador.vida-=10;
 			temDanio=60;
 		}
 	}
@@ -30,7 +31,7 @@ if(instance_exists(obj_esqueleto)){
 if(instance_exists(obj_cuervoEnemigoN)){
 	if(place_meeting(x,y,obj_cuervoEnemigoN)){
 		if(temCuervoDanio--<=0){
-			vida-=10;
+			obj_vidaJugador.vida-=10;
 			temCuervoDanio=60;
 		}
 	}
@@ -38,14 +39,14 @@ if(instance_exists(obj_cuervoEnemigoN)){
 if(instance_exists(obj_jefe_noche)){
 	if(place_meeting(x,y,obj_jefe_noche)){
 		if(temJefeAtaque--<=0){
-			vida-=10;
+			obj_vidaJugador.vida-=10;
 			temJefeAtaque=60;
 		}
 	}
 }
 
 
-if(vida<=0){
+ if(obj_vidaJugador.vida<=0 ){
 	estado="muerte";
 }else if (_ataqueCuervo1) {
     estado = "ataque_cuervo1";
@@ -116,7 +117,11 @@ switch (estado) {
         break;
     
     case "muerte":
+	
         sprite_index = spr_jugador_muerte;
+		
+		
+		
         break;
     
     default:
@@ -179,6 +184,6 @@ if(_jum and !place_free(x,y+1)){
 
 if(instance_exists(obj_finalNivel)){
 	if(instance_exists(obj_player)){
-		vida=0;
+		obj_vidaJugador.vida=0;
 	}
 }
