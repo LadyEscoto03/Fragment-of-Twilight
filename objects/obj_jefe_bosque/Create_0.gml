@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //dir=1;
-movespeed=0.5;
+movespeed=0.8;
 grv=0.3;
 temCorto=0;
 hsp=0;
