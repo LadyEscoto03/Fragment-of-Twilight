@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"spr_jugador_sanar",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":76,
   "bbox_left":0,
   "bbox_right":37,
-  "bbox_top":0,
+  "bbox_top":7,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
