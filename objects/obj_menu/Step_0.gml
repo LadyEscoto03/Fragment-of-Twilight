@@ -11,6 +11,9 @@ if(keyboard_check_pressed(vk_enter)){
 	}
 	//opcion iniciar juego
 	if(index==0){
+		obj_vidaJugador.vida=200;
+		obj_vidaJugador.vida_max=200;
+		obj_puntos.puntos=0;
 		room_goto(rm_nivel1);
 	}
 }
