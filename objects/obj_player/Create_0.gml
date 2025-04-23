@@ -13,3 +13,7 @@ temCuervoDanio=60;
 temDanio=60;
 rm=false;
 danioJefe=0;
+
+gusano=0;
+
+lava=0;

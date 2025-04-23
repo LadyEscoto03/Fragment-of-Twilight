@@ -14,3 +14,6 @@ temCuervoDanio=60;
 temJefeAtaque=60;
 final=false;
 rm2=false;
+gusano=0;
+lava=0;
+planta=0;
