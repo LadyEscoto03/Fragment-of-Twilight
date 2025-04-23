@@ -28,6 +28,14 @@ if(instance_exists(obj_esqueleto)){
 		}
 	}
 }
+if(instance_exists(obj_plantaAgresiva)){
+	if(place_meeting(x,y,obj_plantaAgresiva)){
+		if(planta--<=0){
+			obj_vidaJugador.vida-=10;
+			planta=60;
+		}
+	}
+}
 if(instance_exists(obj_cuervoEnemigoN)){
 	if(place_meeting(x,y,obj_cuervoEnemigoN)){
 		if(temCuervoDanio--<=0){
@@ -36,6 +44,25 @@ if(instance_exists(obj_cuervoEnemigoN)){
 		}
 	}
 }
+
+
+if(instance_exists(obj_gusano)){
+	if(place_meeting(x,y,obj_gusano)){
+		if(gusano--<=0){
+			obj_vidaJugador.vida-=10;
+			gusano=90;
+		}
+	}
+}
+if(instance_exists(obj_lava)){
+	if(place_meeting(x,y,obj_lava)){
+		if(lava--<=0){
+			obj_vidaJugador.vida-=10;
+			lava=100;
+		}
+	}
+}
+
 if(instance_exists(obj_jefe_noche)){
 	if(place_meeting(x,y,obj_jefe_noche)){
 		if(temJefeAtaque--<=0){
