@@ -16,6 +16,21 @@ if(room_get_name(room)=="rm_nivel1"){
 }
 
 
+if(instance_exists(obj_gusano)){
+	if(place_meeting(x,y,obj_gusano)){
+		if(gusano--<=0){
+			alarm[2]=1;
+		}
+	}
+}
+if(instance_exists(obj_lava)){
+	if(place_meeting(x,y,obj_lava)){
+		if(lava--<=0){
+			estado="Daño";
+			lava=100;
+		}
+	}
+}
 if(instance_exists(obj_cuervoEnemigoN)){
 	if(place_meeting(x,y,obj_cuervoEnemigoN)){
 		if(temCuervoDanio--<=0){
