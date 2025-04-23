@@ -29,6 +29,7 @@ if(surface_exists(sombra_superficie)){
 	scr_luz(obj_hongo);
 	scr_luz(obj_semilla);
 	scr_luz(obj_cristal);
+	scr_luz(obj_lava);
 	if(room_get_name(room)=="rm_nivel3"){
 		scr_luz(obj_player);
 		scr_luz(obj_player_noche);
