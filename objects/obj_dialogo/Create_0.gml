@@ -3,7 +3,8 @@
 depth=-100;
 max_caracteres_linea = 25;
 
-texto="Este fragmento no trajo el equilibrio... pero aún quedan infinitos crepúsculos. Estos "+string(obj_puntos.puntos)+" fragmentos serán últiles. Son parte del ciclo.";
+texto = "El equilibrio nunca fue mi meta... yo rompí el ciclo. Pero estos " + string(obj_puntos.puntos) + " fragmentos podrían darme una segunda oportunidad... en el último crepúsculo.";
+
 texto2="";
 
 
