@@ -7,19 +7,16 @@ if(!instance_exists(obj_InicioJefe)){
 	if((place_meeting(x,y,obj_player_noche) and  obj_player_noche.estado="ataque_espada1")and danio--<=0){
 		vida-=10;
 		danio=50;
-	}
-	if(vida<=0){
+	}else if(vida<=0){
 		estado="muerte";
-	}
-	
-	
-	
-if(estado=="hechizo"){
+	}else if(estado=="hechizo"){
     tiempo_hechizo--; 
     if(tiempo_hechizo<=0){
-        estado="caminar";
-        tiempo_hechizo=60;
-        ataque=false;
+			estado="caminar";
+			tiempo_hechizo=60;
+			ataque=false;
+		
+        
     }
 } else {
     if (!collision_circle(x,y,75,obj_player_noche,false,false)) {
