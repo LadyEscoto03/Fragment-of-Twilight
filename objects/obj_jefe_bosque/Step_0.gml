@@ -126,15 +126,15 @@ y += vsp;
 if (hsp != 0) {
     image_xscale = sign(hsp);
 }
-if(place_meeting(x,y,obj_cuervoDestrucion)){
-	if(danio==false){
-		vida-=10;
-		danio=true;
-	}
+//if(place_meeting(x,y,obj_cuervoDestrucion)){
+//	if(danio==false){
+//		vida-=10;
+//		danio=true;
+//	}
 	
-}else{
-	danio=false;
-}
+//}else{
+//	danio=false;
+//}
 if(obj_player.estado=="attack") and place_meeting(x,y,obj_player){
 	if(danioEspada==false){
 		vida-=15;

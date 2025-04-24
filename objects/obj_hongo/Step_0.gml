@@ -13,6 +13,9 @@ if(instance_exists(obj_player_noche)){
 }
 
 
+
+
+
 var enRangoLargo = collision_circle(x, y, 182, objeto, false, false);
 
 if(collision_circle(x, y, 32, objeto, false, false)){
@@ -23,6 +26,8 @@ if(collision_circle(x, y, 32, objeto, false, false)){
  if (enRangoLargo && estado == "correr" && temporizador-- <= 0) {
     estado = "ataqueLargaDistancia";
     temporizador = 60;
+}else if( vida<=0){
+	estado="muerte";
 }
 
 // Máquina de estados (siempre se ejecuta)
@@ -72,8 +77,13 @@ switch (estado) {
 		break;
 
     default:
-        estado = "correr";
+	if(vida<=0){
+		estado="muerte";
+	}else {
+		estado = "correr";
         temporizador = 60;
+	}
+        
         break;
 }
 

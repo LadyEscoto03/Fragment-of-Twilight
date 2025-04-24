@@ -3,11 +3,20 @@
 
 if(instance_exists(obj_player_noche)){
 	objeto=obj_player_noche;
+	if((place_meeting(x,y,obj_player_noche) and  obj_player_noche.estado="ataque_espada1")and danio--<=0){
+		vida-=15;
+		danio=50;
+	}
 }else if (instance_exists(obj_player)){
 	objeto=obj_player;
 }
+if(vida<=0){
+	estado="danio";
+	} else{
+	estado="caminar";
+}
 
-estado="caminar";
+
 if(collision_circle(x,y,96,objeto,false,false)){
 	movespeed=2;
 	var anguloDireccion=point_direction(x,y,objeto.x,objeto.y);
@@ -31,6 +40,12 @@ switch(estado){
 	break;
 	case "ataque":
 	sprite_index=spr_cuervo_ataque;
+	break;
+	case "danio":
+	sprite_index=spr_cuervo_danio;
+	 if (image_index >= image_number - 1) {
+           instance_destroy();
+       }
 	break;
 }
 

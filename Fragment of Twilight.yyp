@@ -165,6 +165,7 @@
     {"id":{"name":"obj_neblina","path":"objects/obj_neblina/obj_neblina.yy",},},
     {"id":{"name":"obj_noche","path":"objects/obj_noche/obj_noche.yy",},},
     {"id":{"name":"obj_nota","path":"objects/obj_nota/obj_nota.yy",},},
+    {"id":{"name":"obj_observacion","path":"objects/obj_observacion/obj_observacion.yy",},},
     {"id":{"name":"obj_ojo_disparo_destruccion","path":"objects/obj_ojo_disparo_destruccion/obj_ojo_disparo_destruccion.yy",},},
     {"id":{"name":"obj_ojo_disparo","path":"objects/obj_ojo_disparo/obj_ojo_disparo.yy",},},
     {"id":{"name":"obj_Ojo","path":"objects/obj_Ojo/obj_Ojo.yy",},},

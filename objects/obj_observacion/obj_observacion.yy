@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_hongo",
+  "%Name":"obj_observacion",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_hongo",
+  "name":"obj_observacion",
   "overriddenProperties":[],
   "parent":{
-    "name":"Hongo",
-    "path":"folders/Objects/enemigos-naturales/Hongo.yy",
+    "name":"Teclas",
+    "path":"folders/Objects/Teclas.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_hongo_correr",
-    "path":"sprites/spr_hongo_correr/spr_hongo_correr.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
